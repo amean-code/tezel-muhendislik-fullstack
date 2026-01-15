@@ -1,0 +1,49 @@
+/**
+ * CorporatePortfolio komponenti - Kurumsal portföy ve mühendislik mükemmelliği bölümü
+ */
+export default function CorporatePortfolio() {
+  return (
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-[1280px] mx-auto grid grid-cols-12 gap-8">
+        <div className="col-span-12 lg:col-span-5">
+          <h2 className="text-accent text-sm font-black uppercase tracking-widest mb-4">
+            Kurumsal Portföy
+          </h2>
+          <h3 className="text-primary text-4xl lg:text-5xl font-black uppercase mb-8">
+            Mühendislik Mükemmelliği
+          </h3>
+        </div>
+        <div className="col-span-12 lg:col-span-7">
+          <div className="prose prose-lg max-w-none">
+            <p className="text-gray-700 font-medium leading-relaxed mb-6">
+              Tezel Mühendislik olarak, dikey taşımacılık sistemlerinde uluslararası güvenlik
+              standartlarını (EN 81-20/50) temel alan yüksek mühendislik disiplini ile hizmet
+              veriyoruz. Teknik analizden uygulamaya kadar her aşamada mekanik hassasiyeti ve
+              enerji verimliliğini ön planda tutuyoruz.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-8">
+              Modernizasyon uzmanlığımız ile yaşlanan sistemleri güncel teknolojiyle entegre
+              ederek, emniyet protokollerini en üst seviyeye çıkarıyor ve operasyonel ömrü
+              maksimize ediyoruz. Sertifikalı bileşen kullanımı ve titiz mühendislik hesaplamalarıyla
+              tesislerinizin dikey mobilite altyapısını güvence altına alıyoruz.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-8 pt-8 border-t border-gray-100">
+            <div>
+              <span className="block text-3xl font-black text-primary mb-1">ISO 9001</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-tighter">
+                Kalite Standartları
+              </span>
+            </div>
+            <div>
+              <span className="block text-3xl font-black text-primary mb-1">EN 81-20</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-tighter">
+                Güvenlik Protokolü
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

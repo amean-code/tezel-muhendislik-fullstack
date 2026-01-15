@@ -8,16 +8,20 @@ interface ProcessStep {
 }
 
 interface ServiceProcessProps {
+  badge?: string;
   title: string;
   subtitle?: string;
   steps: ProcessStep[];
 }
 
-export default function ServiceProcess({ title, subtitle, steps }: ServiceProcessProps) {
+export default function ServiceProcess({ badge, title, subtitle, steps }: ServiceProcessProps) {
   return (
     <section className="py-24 bg-gray-50 border-t border-gray-200">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
+          {badge && (
+            <h2 className="text-accent text-sm font-bold uppercase tracking-wider mb-2">{badge}</h2>
+          )}
           <h2 className="text-3xl font-display font-bold text-primary">{title}</h2>
           {subtitle && <p className="text-gray-500 mt-3">{subtitle}</p>}
         </div>

@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/products/Breadcrumbs";
 import ProductGallery from "@/components/products/ProductGallery";
-import ProductInfo from "@/components/products/ProductInfo";
-import TechnicalSpecs from "@/components/products/TechnicalSpecs";
+import ProductPageHeading from "@/components/products/ProductPageHeading";
+import ProductEngineeringAdvantages from "@/components/products/ProductEngineeringAdvantages";
+import ProductSpecsComparison from "@/components/products/ProductSpecsComparison";
 import RelatedProducts from "@/components/products/RelatedProducts";
 import StickyCTA from "@/components/products/StickyCTA";
 import { getProductBySlug, getRelatedProducts } from "@/data/products";
@@ -14,9 +15,10 @@ import { getProductBySlug, getRelatedProducts } from "@/data/products";
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const product = getProductBySlug(params.slug);
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
 
   if (!product) {
     return {
@@ -40,8 +42,9 @@ export async function generateMetadata({
 /**
  * Ürün detay sayfası
  */
-export default function ProductDetailPage({ params }: { params: { slug: string } }) {
-  const product = getProductBySlug(params.slug);
+export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
 
   if (!product) {
     notFound();
@@ -65,14 +68,17 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
 
   return (
     <>
-      <div className="max-w-[1440px] mx-auto px-4 md:px-10 lg:px-20 py-6 pb-20">
+      <div className="max-w-[1280px] mx-auto px-4 lg:px-10 py-6">
         {/* Breadcrumbs */}
         <Breadcrumbs items={breadcrumbs} />
 
-        {/* Ürün Hero Bölümü */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 mb-16">
-          {/* Sol Kolon: Galeri */}
-          <div className="lg:col-span-7">
+        {/* Page Heading */}
+        <ProductPageHeading title={product.title} description={product.description} />
+
+        {/* Product Visuals & Context */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-12">
+          {/* Gallery (Left) */}
+          <div className="lg:col-span-7 flex flex-col gap-4">
             <ProductGallery
               mainImage={product.image}
               mainImageAlt={product.imageAlt}
@@ -81,19 +87,28 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
             />
           </div>
 
-          {/* Sağ Kolon: Bilgiler */}
-          <div className="lg:col-span-5">
-            <ProductInfo
-              badge={product.badge}
-              title={product.title}
-              description={product.description}
-              features={product.features}
-            />
-          </div>
+          {/* Engineering Context (Right) */}
+          {product.engineeringAdvantages && (
+            <div className="lg:col-span-5 flex flex-col">
+              <ProductEngineeringAdvantages
+                title={product.engineeringAdvantages.title}
+                description={product.engineeringAdvantages.description}
+                advantages={product.engineeringAdvantages.advantages}
+              />
+            </div>
+          )}
         </div>
 
-        {/* Teknik Özellikler */}
-        <TechnicalSpecs specs={product.specs} />
+        {/* Technical Specification Table */}
+        {product.comparisonSpecs && (
+          <ProductSpecsComparison
+            title={product.comparisonSpecs.title}
+            version1Label={product.comparisonSpecs.version1Label}
+            version2Label={product.comparisonSpecs.version2Label}
+            specs={product.comparisonSpecs.specs}
+            note={product.comparisonSpecs.note}
+          />
+        )}
 
         {/* Benzer Ürünler */}
         {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}

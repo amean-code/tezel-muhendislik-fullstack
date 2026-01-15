@@ -78,16 +78,34 @@ export default function Header() {
                         Tüm Hizmetler
                       </Link>
                       <div className="border-t border-gray-200 my-2"></div>
-                      {services.map((service) => (
-                        <Link
-                          key={service.slug}
-                          href={`/hizmetler/${service.slug}`}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
-                          onClick={closeServicesDropdown}
-                        >
-                          {service.title}
-                        </Link>
-                      ))}
+                      <Link
+                        href="/hizmetler/asansor-modernizasyonu"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
+                        onClick={closeServicesDropdown}
+                      >
+                        Asansör Modernizasyonu
+                      </Link>
+                      <Link
+                        href="/hizmetler/periyodik-bakim"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
+                        onClick={closeServicesDropdown}
+                      >
+                        Periyodik Bakım
+                      </Link>
+                      <Link
+                        href="/hizmetler/yuruyen-merdiven-sistemleri"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
+                        onClick={closeServicesDropdown}
+                      >
+                        Yürüyen Merdiven Sistemleri
+                      </Link>
+                      <Link
+                        href="/hizmetler/elektrik-kontrol-sistemleri"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
+                        onClick={closeServicesDropdown}
+                      >
+                        Elektrik & Kontrol Sistemleri
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -112,15 +130,24 @@ export default function Header() {
                 Hakkımızda
               </Link>
               <Link
+                href="/bilgi-merkezi"
+                className="text-gray-700 text-sm font-semibold hover:text-accent transition-colors"
+              >
+                Bilgi Merkezi
+              </Link>
+              <Link
                 href="/iletisim"
                 className="text-gray-700 text-sm font-semibold hover:text-accent transition-colors"
               >
                 İletişim
               </Link>
             </nav>
-            <button className="flex items-center justify-center h-10 px-6 bg-accent hover:bg-[#d97b20] text-white text-sm font-bold rounded transition-colors shadow-sm">
-              <span>Teklif Talep Et</span>
-            </button>
+            <Link
+              href="/iletisim"
+              className="flex items-center justify-center h-10 px-6 bg-accent hover:bg-[#d97b20] text-white text-sm font-bold rounded transition-colors shadow-sm"
+            >
+              Teklif Talep Et
+            </Link>
           </div>
 
           {/* Mobil Menü Butonu */}

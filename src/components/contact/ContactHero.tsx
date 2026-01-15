@@ -3,16 +3,37 @@
  */
 export default function ContactHero() {
   return (
-    <section className="w-full bg-background-light py-16 md:py-24 border-b border-gray-200">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-primary text-4xl md:text-5xl font-bold tracking-tight mb-4">
-          İletişim & Teklif Talebi
-        </h1>
-        <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto font-normal">
-          Endüstriyel asansör ve yürüyen merdiven çözümlerimiz için teknik ekibimizle iletişime geçin
-          veya projeniz için detaylı teklif alın.
-        </p>
+    <div className="relative flex h-[400px] w-full flex-col justify-center overflow-hidden bg-primary">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlZStmjov0QrUpR-TIpUkSAhGWJYLdAJcyqtd8CXBk0cq6iThAgFnCBqmvV_9hOZz5_BAaKZU_TcXdNRuWZhR-pZsIv_z_EapbyG0Y8jsVW6-P0CL1Zh3H55Jg6C-JZ8MveovlxinfCBC9EmrQKcQMAnwo7oFe-lILGRl_6y9FHvFmZvqoDswcZ_PLEwlP5MwyGhJsWY-cCiBEdDPAO9ZeDcQ6yFPnqXQt-P0-BgOR--PC6_oW9B30_5JS6Ofs_IPrwT244nyL5xo")',
+        }}
+      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-90"></div>
+      {/* Content */}
+      <div className="relative z-10 mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center gap-2 text-accent/90 mb-2">
+            <span className="material-symbols-outlined text-sm">alternate_email</span>
+            <span className="text-xs font-bold uppercase tracking-widest font-display">
+              İletişim & Destek
+            </span>
+          </div>
+          <h1 className="font-display text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
+            İletişim &<br />
+            <span className="text-white/80">Teklif Talebi</span>
+          </h1>
+          <p className="mt-4 max-w-2xl text-lg text-gray-300 font-light">
+            Endüstriyel asansör ve yürüyen merdiven çözümlerimiz için teknik ekibimizle iletişime geçin
+            veya projeniz için detaylı teklif alın.
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }

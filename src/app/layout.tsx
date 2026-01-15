@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactFloatingButtons from "@/components/ContactFloatingButtons";
 import "./globals.css";
 
 const inter = Inter({
@@ -40,8 +41,9 @@ export default function RootLayout({
         className={`${inter.variable} antialiased bg-background-light text-primary font-display overflow-x-hidden flex flex-col min-h-screen`}
       >
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow pb-20">{children}</main>
         <Footer />
+        <ContactFloatingButtons />
       </body>
     </html>
   );

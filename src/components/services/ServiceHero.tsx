@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 /**
@@ -20,6 +22,16 @@ export default function ServiceHero({
   imageAlt,
   ctaText = "Teklif Al",
 }: ServiceHeroProps) {
+  /**
+   * Hizmet detayları bölümüne kaydırma fonksiyonu
+   */
+  const scrollToServiceDetails = () => {
+    const serviceDetailsSection = document.getElementById("service-details-section");
+    if (serviceDetailsSection) {
+      serviceDetailsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <section className="relative w-full h-[600px] bg-primary flex items-center justify-center">
       <div className="absolute inset-0 z-0">
@@ -42,8 +54,12 @@ export default function ServiceHero({
             {description}
           </p>
           <div className="mt-4 flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-4 bg-accent hover:bg-[#d97b20] text-white font-bold transition-colors shadow-lg">
-              {ctaText}
+            <button
+              onClick={scrollToServiceDetails}
+              className="px-8 py-4 bg-accent hover:bg-[#d97b20] text-white font-bold transition-colors shadow-lg flex items-center gap-2"
+            >
+              <span>Hizmet Detayları</span>
+              <span className="material-symbols-outlined text-[20px]">arrow_downward</span>
             </button>
           </div>
         </div>

@@ -2,6 +2,19 @@ import Link from "next/link";
 import { services } from "@/data/services";
 
 /**
+ * Slug'dan sayfa URL'sine dönüştürme fonksiyonu
+ */
+function getServiceUrl(slug: string): string {
+  const urlMap: Record<string, string> = {
+    "asansor-modernizasyonu": "/hizmetler/asansor-modernizasyonu",
+    "periyodik-bakim": "/hizmetler/periyodik-bakim",
+    "yuruyen-merdiven-sistemleri": "/hizmetler/yuruyen-merdiven-sistemleri",
+    "test-denetim": "/hizmetler", // Test & Denetim için henüz sayfa yok
+  };
+  return urlMap[slug] || "/hizmetler";
+}
+
+/**
  * ServicesGrid komponenti - Hizmet kartları grid'i
  */
 export default function ServicesGrid() {
@@ -21,7 +34,7 @@ export default function ServicesGrid() {
           {services.map((service) => (
             <Link
               key={service.slug}
-              href={`/hizmetler/${service.slug}`}
+              href={getServiceUrl(service.slug)}
               className="bg-white border border-gray-200 p-8 service-card-hover transition-all duration-300 group block"
             >
               <div className="mb-6 inline-flex items-center justify-center p-3 bg-gray-50">

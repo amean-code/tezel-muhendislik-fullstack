@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /**
  * Breadcrumbs komponenti - Sayfa navigasyon breadcrumb'ları
  */
@@ -12,18 +14,18 @@ interface BreadcrumbsProps {
 
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
   return (
-    <nav className="flex flex-wrap items-center gap-2 text-sm text-gray-500 mb-8">
+    <nav className="flex items-center gap-2 mb-6">
       {items.map((item, index) => (
         <div key={index} className="flex items-center gap-2">
           {index > 0 && (
-            <span className="material-symbols-outlined text-[16px]">chevron_right</span>
+            <span className="material-symbols-outlined text-gray-600 text-xs">chevron_right</span>
           )}
           {item.href ? (
-            <a className="hover:text-primary transition-colors" href={item.href}>
+            <Link className="text-gray-600 hover:text-primary text-sm font-medium transition-colors" href={item.href}>
               {item.label}
-            </a>
+            </Link>
           ) : (
-            <span className="text-primary font-medium">{item.label}</span>
+            <span className="text-primary text-sm font-medium">{item.label}</span>
           )}
         </div>
       ))}

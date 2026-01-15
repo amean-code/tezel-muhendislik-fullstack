@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 /**
  * Hero Section komponenti - Ana banner ve CTA butonları içerir
@@ -37,10 +38,10 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <button className="h-14 px-10 bg-accent hover:bg-[#d97b20] text-white text-sm font-black uppercase tracking-widest transition-all">
-              Teklif Al
+              <Link href="/iletisim">Teklif Al</Link>
             </button>
             <button className="h-14 px-10 bg-transparent hover:bg-white/10 text-white border-2 border-white text-sm font-black uppercase tracking-widest transition-colors">
-              Ürünleri İncele
+              <Link href="/hizmetler">Hizmetleri İncele</Link>
             </button>
           </div>
         </div>

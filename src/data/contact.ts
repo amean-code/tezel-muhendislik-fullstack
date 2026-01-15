@@ -24,6 +24,7 @@ export interface ContactInfo {
   whatsapp: {
     text: string;
     url?: string;
+    number: string; // WhatsApp için ülke kodu ile birlikte (başında + olmadan)
   };
 }
 
@@ -52,6 +53,7 @@ export const contactInfo: ContactInfo = {
   whatsapp: {
     text: "WhatsApp ile İletişime Geç",
     url: "#",
+    number: "902125550123", // WhatsApp için ülke kodu ile birlikte (başında + olmadan)
   },
 };
 

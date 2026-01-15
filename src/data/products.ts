@@ -13,6 +13,18 @@ export interface ProductThumbnail {
   alt: string;
 }
 
+export interface EngineeringAdvantage {
+  title: string;
+  description: string;
+}
+
+export interface ComparisonSpec {
+  parameter: string;
+  unit: string;
+  version1: string;
+  version2: string;
+}
+
 export interface Product {
   id: string;
   slug: string;
@@ -31,6 +43,18 @@ export interface Product {
     min?: number;
     max?: number;
     currency: string;
+  };
+  engineeringAdvantages?: {
+    title: string;
+    description: string;
+    advantages: EngineeringAdvantage[];
+  };
+  comparisonSpecs?: {
+    title: string;
+    version1Label: string;
+    version2Label: string;
+    specs: ComparisonSpec[];
+    note?: string;
   };
 }
 
@@ -68,6 +92,63 @@ export const products: Product[] = [
       { parameter: "Güç", value: "4.5", unit: "kW" },
     ],
     inStock: true,
+    engineeringAdvantages: {
+      title: "Modern Motor Teknolojisi",
+      description:
+        "TZ-X5 Dişlisiz Motor, gelişmiş senkron teknoloji ile %35'e varan enerji tasarrufu sağlar. Kompakt tasarımı sayesinde küçük makine dairesi gereksinimlerine uyumludur.",
+      advantages: [
+        {
+          title: "Yüksek Verimlilik",
+          description: "Gelişmiş stator tasarımı ile %35'e varan enerji tasarrufu sağlar.",
+        },
+        {
+          title: "Kompakt Tasarım",
+          description: "Küçük makine dairesi gereksinimlerine uygun, yer tasarrufu sağlar.",
+        },
+        {
+          title: "Sessiz Çalışma",
+          description: "Düşük gürültü seviyesi ile konforlu kullanım imkanı sunar.",
+        },
+      ],
+    },
+    comparisonSpecs: {
+      title: "Teknik Özellikler Tablosu",
+      version1Label: "TZ-X5 Standart",
+      version2Label: "TZ-X5 Premium",
+      specs: [
+        {
+          parameter: "Kapasite",
+          unit: "kg",
+          version1: "630",
+          version2: "800 - 1000",
+        },
+        {
+          parameter: "Hız",
+          unit: "m/s",
+          version1: "1.0 - 1.6",
+          version2: "1.6 - 2.0",
+        },
+        {
+          parameter: "Güç",
+          unit: "kW",
+          version1: "4.5",
+          version2: "5.5 - 7.5",
+        },
+        {
+          parameter: "Besleme Voltajı",
+          unit: "VAC",
+          version1: "380 (3 Faz)",
+          version2: "380 - 400 (3 Faz)",
+        },
+        {
+          parameter: "Koruma Sınıfı",
+          unit: "IP",
+          version1: "IP41",
+          version2: "IP54",
+        },
+      ],
+      note: "* Özel projeler için farklı konfigürasyonlar mevcuttur.",
+    },
   },
   {
     id: "2",
@@ -98,6 +179,57 @@ export const products: Product[] = [
       { parameter: "Protokol", value: "CANbus", unit: "-" },
     ],
     inStock: true,
+    engineeringAdvantages: {
+      title: "Akıllı Kontrol ve Entegrasyon",
+      description:
+        "Pro-Control V3 Pano, gelişmiş CANbus protokolü ile tüm asansör bileşenlerini tek bir sistem altında toplar. Akıllı trafik yönetimi algoritması sayesinde bekleme sürelerini %30 oranında azaltır.",
+      advantages: [
+        {
+          title: "Akıllı Trafik Yönetimi",
+          description: "Gelişmiş algoritma ile bekleme sürelerini %30 oranında azaltır.",
+        },
+        {
+          title: "Kolay Bakım",
+          description: "Modüler yapı sayesinde hızlı ve kolay bakım imkanı sunar.",
+        },
+        {
+          title: "Geniş Uyumluluk",
+          description: "Tüm modern motor ve kapı sistemleri ile tam uyumlu çalışır.",
+        },
+      ],
+    },
+    comparisonSpecs: {
+      title: "Teknik Özellikler Tablosu",
+      version1Label: "Pro-Control V3 Standart",
+      version2Label: "Pro-Control V3 Premium",
+      specs: [
+        {
+          parameter: "Durak Sayısı",
+          unit: "-",
+          version1: "Max 8",
+          version2: "Max 16",
+        },
+        {
+          parameter: "Protokol",
+          unit: "-",
+          version1: "CANbus",
+          version2: "CANbus, Modbus",
+        },
+        {
+          parameter: "Besleme Voltajı",
+          unit: "VAC",
+          version1: "380 (3 Faz)",
+          version2: "380 - 400 (3 Faz)",
+        },
+        {
+          parameter: "Koruma Sınıfı",
+          unit: "IP",
+          version1: "IP20",
+          version2: "IP54",
+        },
+      ],
+      note: "* Özel projeler için farklı konfigürasyonlar mevcuttur.",
+    },
   },
   {
     id: "3",
@@ -128,6 +260,57 @@ export const products: Product[] = [
       { parameter: "Materyal", value: "304 Paslanmaz", unit: "-" },
     ],
     inStock: true,
+    engineeringAdvantages: {
+      title: "Sessizlik ve Dayanıklılık",
+      description:
+        "MD-20 Otomatik Kapı sistemi, gelişmiş teleskopik mekanizma ile sessiz çalışma sağlar. Paslanmaz çelik yapısı sayesinde uzun ömürlü ve bakım gerektirmeyen bir çözüm sunar.",
+      advantages: [
+        {
+          title: "Sessiz Çalışma",
+          description: "Gelişmiş mekanizma ile düşük gürültü seviyesi sağlar.",
+        },
+        {
+          title: "Yüksek Dayanıklılık",
+          description: "Paslanmaz çelik yapı ile uzun ömürlü kullanım imkanı sunar.",
+        },
+        {
+          title: "Kolay Montaj",
+          description: "Modüler tasarım sayesinde hızlı ve kolay montaj sağlar.",
+        },
+      ],
+    },
+    comparisonSpecs: {
+      title: "Teknik Özellikler Tablosu",
+      version1Label: "MD-20 Standart",
+      version2Label: "MD-20 Premium",
+      specs: [
+        {
+          parameter: "Genişlik",
+          unit: "mm",
+          version1: "800 - 1000",
+          version2: "1000 - 1100",
+        },
+        {
+          parameter: "Açılma Tipi",
+          unit: "-",
+          version1: "Merkezi",
+          version2: "Teleskopik",
+        },
+        {
+          parameter: "Materyal",
+          unit: "-",
+          version1: "304 Paslanmaz",
+          version2: "316 Paslanmaz",
+        },
+        {
+          parameter: "Açılma Hızı",
+          unit: "m/s",
+          version1: "0.3 - 0.5",
+          version2: "0.5 - 0.8",
+        },
+      ],
+      note: "* Özel genişlik ve açılma tipi için teknik departmanımızla iletişime geçiniz.",
+    },
   },
   {
     id: "4",
@@ -267,6 +450,81 @@ export const products: Product[] = [
       { parameter: "Koruma Sınıfı", value: "IP 41", unit: "-" },
     ],
     inStock: true,
+    engineeringAdvantages: {
+      title: "Endüstriyel Güç ve Hassasiyet",
+      description:
+        "TM-5000 Serisi, özellikle yüksek trafikli ticari binalar ve ağır yük gereksinimi olan endüstriyel tesisler için optimize edilmiştir. Patentli stator tasarımı sayesinde enerji verimliliğini %25 oranında artırırken, sessiz çalışma (< 55dB) özelliği ile konforu en üst düzeye taşır.",
+      advantages: [
+        {
+          title: "Termal Stabilite",
+          description: "Gelişmiş soğutma kanatçıkları sayesinde 24 saat kesintisiz çalışma döngüsü.",
+        },
+        {
+          title: "Düşük Bakım Maliyeti",
+          description: "Sızdırmaz rulman teknolojisi ve aşınmaya dayanıklı alaşım gövde.",
+        },
+        {
+          title: "Kolay Entegrasyon",
+          description: "Tüm modern inverter sistemleri ve VVVF sürücüler ile %100 uyumlu.",
+        },
+      ],
+    },
+    comparisonSpecs: {
+      title: "Teknik Özellikler Tablosu",
+      version1Label: "TM-5000 V1",
+      version2Label: "TM-5000 V2 (Extended)",
+      specs: [
+        {
+          parameter: "Kapasite (Taşıma)",
+          unit: "kg",
+          version1: "1000 - 1600",
+          version2: "2000 - 2500",
+        },
+        {
+          parameter: "Nominal Hız",
+          unit: "m/s",
+          version1: "1.0 - 1.6",
+          version2: "1.6 - 2.5",
+        },
+        {
+          parameter: "Besleme Voltajı",
+          unit: "VAC",
+          version1: "380 - 400 (3 Faz)",
+          version2: "400 - 440 (3 Faz)",
+        },
+        {
+          parameter: "Frekans",
+          unit: "Hz",
+          version1: "50 / 60",
+          version2: "50 / 60",
+        },
+        {
+          parameter: "Kasnak Çapı",
+          unit: "mm",
+          version1: "Ø 400",
+          version2: "Ø 480",
+        },
+        {
+          parameter: "Koruma Sınıfı",
+          unit: "IP",
+          version1: "IP44",
+          version2: "IP54",
+        },
+        {
+          parameter: "Yalıtım Sınıfı",
+          unit: "-",
+          version1: "Class F",
+          version2: "Class F / H",
+        },
+        {
+          parameter: "Standart Uyumluluğu",
+          unit: "-",
+          version1: "EN 81-20, EN 81-50",
+          version2: "EN 81-20, EN 81-50, CE",
+        },
+      ],
+      note: "* Özel projeler için farklı voltaj ve hız seçenekleri mevcuttur. Lütfen teknik departmanımızla iletişime geçiniz.",
+    },
   },
 ];
 

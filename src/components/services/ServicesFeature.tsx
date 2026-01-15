@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 /**
- * ServicesFeature komponenti - Özellik bölümleri (Asansör Sistemleri ve Modernizasyon)
+ * ServicesFeature komponenti - Özellik bölümleri (Tüm hizmetler için kısa bilgi alanları)
  */
 interface FeatureItem {
   text: string;
@@ -53,6 +53,60 @@ export default function ServicesFeature() {
         { text: "Otomatik kapı revizyonu ve güvenlik fotosellerinin güncellenmesi." },
         { text: "Kabin içi estetik yenileme ve aydınlatma modernizasyonu." },
         { text: "Hız regülatörü ve fren sistemlerinin güvenlik testleri ve değişimi." },
+      ],
+    },
+    {
+      title: "Yürüyen Merdiven Sistemleri",
+      badge: "Yatay Ulaşım Çözümleri",
+      description:
+        "Ticari merkezler, metro istasyonları ve havalimanları için ağır hizmet tipi yürüyen merdiven ve bant sistemleri. Güvenlik sensörleri ve otomasyon entegrasyonu ile donatılmış modern çözümler.",
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDpA4dqBmp79ZNsj1yQ8QAbwDty5_EDhk06PpinBsNm79K7fw2d8g-auPEI8iCufYyMB-Hk3TNl8ZHiI3-8tBXia1hTSPsI4NHO4AVvYvpNdqowUAJPmGDOaHYuvLgmVUYjkOuwAglORBrrgC-j-PTtYG1BW0GUQIrMgAhBxQWeqF0v0D-zGsxqgG_zUDUoVJgxSsZQ0wrD-QP5db_Np1tFDuh7k0DVmSp6n5QzCvMJs7E1j6FGlDiKXxdt9dUF1U9HYLDHOtKEgbA",
+      imageAlt: "Yürüyen Merdiven Sistemleri",
+      imagePosition: "left",
+      items: [
+        { text: "EN 115 Standartlarına tam uyumlu güvenlik sistemleri ve sertifikasyon.", strong: "EN 115 Standartlarına" },
+        {
+          text: "Ağır hizmet tipi mekanik sistemler ile yüksek trafik kapasitesi.",
+          strong: "Ağır hizmet tipi",
+        },
+        { text: "Otomatik yön değiştirme ve hız optimizasyonu özellikleri." },
+        { text: "Güvenlik sensörleri ve acil durum fren sistemleri entegrasyonu." },
+      ],
+    },
+    {
+      title: "Periyodik Bakım",
+      badge: "Önleyici Bakım",
+      description:
+        "EN 13015 standartlarına uygun, önleyici ve kestirimci bakım hizmetleri. 7/24 teknik destek ve arıza müdahale garantisi ile kesintisiz işletim sağlıyoruz.",
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCzVkCB3rtlqnCd-MjBp4EjO3q-kpwa90BjHlOMxzBCqUb_6vjHuQseHhgzlb7be5esw2dRSazopH7QEOAnh--dpQflCF4VfiobO9NKIeRUQ6XBmmmp1tEEOVFwM7K08qPDgvJAvg6wBiNRbYAm_wwWt0EXGErwLCi0uMvUo_e64J9AtwogwnGR5LnjZgy0tzZtgZoWdI2-Dgeo34Nvjh5ERVhW_HxVQ4iDCMLfQ52DHO76sMYGi8p3Vh-JksAuJMWIxURUY-j1cU8",
+      imageAlt: "Periyodik Bakım Hizmetleri",
+      imagePosition: "right",
+      items: [
+        { text: "Aylık, üç aylık ve yıllık periyodik bakım programları.", strong: "Periyodik bakım programları" },
+        { text: "Kestirimci bakım teknolojileri ile arıza önleme." },
+        { text: "7/24 teknik destek ve acil müdahale hizmeti." },
+        { text: "Detaylı bakım raporları ve performans analizi." },
+      ],
+    },
+    {
+      title: "Elektrik & Kontrol Sistemleri",
+      badge: "Akıllı Kontrol",
+      description:
+        "Mikroişlemci tabanlı kumanda panoları, VVVF sürücü sistemleri ve akıllı trafik yönetim algoritmaları. Modern binalar için entegre kontrol çözümleri.",
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCboaMQayjXmx4qif-FOAZcoDgzlnLEIUc0IoJyYcedL6RGCiitvrxx-ECmFQix-_DM7XascE1teTaicntqR5WqpmeGZGihUmlcWHS5UACznnMBi7jL7e2h6N9TGDtbQeYc82ABxiNkqcTkBv_JHx5Qr9ooz84B49L2VSFQA9k3zOx0Fzn9ruMUw-BMlktDq2Yz4Oms3RnseBM28s2GpVRxEM3-JEao9hQVKFota8Ef8a2JQbwDxwCop5IU3b5z6kIlw7bKhfDBasU",
+      imageAlt: "Elektrik & Kontrol Sistemleri",
+      imagePosition: "left",
+      items: [
+        { text: "Mikroişlemci tabanlı kumanda panoları ile gelişmiş kontrol.", strong: "Mikroişlemci tabanlı" },
+        {
+          text: "VVVF sürücü teknolojisi ile enerji verimliliği optimizasyonu.",
+          strong: "VVVF sürücü teknolojisi",
+        },
+        { text: "Akıllı trafik yönetim algoritmaları ile bekleme süresi optimizasyonu." },
+        { text: "CANbus ve Modbus protokol desteği ile entegrasyon kolaylığı." },
       ],
     },
   ];

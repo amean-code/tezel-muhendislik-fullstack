@@ -1,3 +1,6 @@
+import { contactInfo } from "@/data/contact";
+import Link from "next/link";
+
 /**
  * CTA Section komponenti - Çağrı yapma bölümü
  */
@@ -18,16 +21,24 @@ export default function CTA() {
               Yeni kurulum veya bakım ihtiyaçlarınız için mühendislik ekibimizle iletişime geçin ve danışmanlık alın.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="w-full sm:w-auto min-w-[180px] h-14 px-8 bg-accent hover:bg-[#d97b20] text-white text-lg font-bold rounded transition-colors shadow-lg">
+              <Link
+                href="/iletisim"
+                className="w-full sm:w-auto min-w-[180px] h-14 px-8 bg-accent hover:bg-[#d97b20] text-white text-lg font-bold rounded transition-colors shadow-lg flex items-center justify-center"
+              >
                 Teklif Talep Et
-              </button>
-              <button className="w-full sm:w-auto min-w-[180px] h-14 px-8 bg-transparent hover:bg-white/10 text-white border border-white/30 text-lg font-bold rounded transition-colors">
+              </Link>
+              <Link
+                href={`https://wa.me/${contactInfo.whatsapp.number}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto min-w-[180px] h-14 px-8 bg-transparent hover:bg-white/10 text-white border border-white/30 text-lg font-bold rounded transition-colors flex items-center justify-center"
+              >
                 Satış Ekibiyle İletişim
-              </button>
+              </Link>
             </div>
           </div>
+          </div>
         </div>
-      </div>
-    </section>
-  );
-}
+      </section>
+    );
+  }

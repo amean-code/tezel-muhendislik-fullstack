@@ -9,16 +9,20 @@ interface WhyCard {
 }
 
 interface WhySectionProps {
+  badge?: string;
   title: string;
   subtitle?: string;
   cards: WhyCard[];
 }
 
-export default function WhySection({ title, subtitle, cards }: WhySectionProps) {
+export default function WhySection({ badge, title, subtitle, cards }: WhySectionProps) {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="service-details-section" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-[1280px] mx-auto">
         <div className="text-center mb-16">
+          {badge && (
+            <h2 className="text-accent text-sm font-bold uppercase tracking-wider mb-2">{badge}</h2>
+          )}
           <h2 className="text-primary text-3xl md:text-4xl font-display font-bold mb-4">{title}</h2>
           <div className="w-20 h-1 bg-accent mx-auto"></div>
           {subtitle && <p className="text-gray-500 mt-6 max-w-2xl mx-auto">{subtitle}</p>}

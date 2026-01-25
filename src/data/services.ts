@@ -37,7 +37,7 @@ export const services: Service[] = [
   {
     slug: "enerji-taahhut-isleri",
     icon: "solar_power",
-    title: "Enerji Taahhüt İşleri",
+    title: "Enerji Taahhüt",
     description:
       "Güneş Enerji Santralleri (GES) ve Elektrikli Araç Şarj İstasyonları kurulumu. Yenilenebilir enerji çözümleri ve sürdürülebilir altyapı projeleri.",
   },

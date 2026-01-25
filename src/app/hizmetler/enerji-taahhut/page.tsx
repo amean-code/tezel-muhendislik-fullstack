@@ -9,13 +9,13 @@ import ServiceDetailCTA from "@/components/services/ServiceDetailCTA";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Enerji Taahhüt İşleri - GES ve Şarj İstasyonları - Tezel Mühendislik",
+  title: "Enerji Taahhüt - GES ve Şarj İstasyonları - Tezel Mühendislik",
   description:
     "Güneş Enerji Santralleri (GES) ve Elektrikli Araç Şarj İstasyonları kurulumu. Yenilenebilir enerji çözümleri.",
   keywords:
     "GES, güneş enerji santrali, araç şarj istasyonu, yenilenebilir enerji, elektrik taahhüt, Tezel Mühendislik",
   openGraph: {
-    title: "Enerji Taahhüt İşleri - Tezel Mühendislik",
+    title: "Enerji Taahhüt - Tezel Mühendislik",
     description: "GES ve şarj istasyonu kurulumu ile sürdürülebilir enerji çözümleri.",
     type: "website",
     locale: "tr_TR",

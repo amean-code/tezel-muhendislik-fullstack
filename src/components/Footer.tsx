@@ -97,7 +97,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/enerji-taahhut-isleri">
-                  Enerji Taahhüt İşleri
+                  Enerji Taahhüt
                 </Link>
               </li>
               <li>

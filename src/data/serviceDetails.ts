@@ -458,7 +458,7 @@ export const serviceDetails: ServiceData[] = [
   },
   {
     slug: "enerji-taahhut-isleri",
-    title: "Enerji Taahhüt İşleri: GES ve Araç Şarj İstasyonları",
+    title: "Enerji Taahhüt: GES ve Araç Şarj İstasyonları",
     description:
       "Güneş Enerji Santralleri (GES) ve Elektrikli Araç Şarj İstasyonları kurulumu. Yenilenebilir enerji çözümleri ve sürdürülebilir altyapı projeleri.",
     badge: "Enerji Çözümleri",
@@ -491,7 +491,7 @@ export const serviceDetails: ServiceData[] = [
     ],
     scope: {
       badge: "Hizmet Kapsamı",
-      title: "Enerji Taahhüt İşleri",
+      title: "Enerji Taahhüt",
       description:
         "GES ve şarj istasyonu projelerinde kapsamlı mühendislik ve kurulum hizmetleri.",
       items: [

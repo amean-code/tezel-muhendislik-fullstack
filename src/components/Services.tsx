@@ -40,7 +40,7 @@ export default function Services() {
       icon: "solar_power",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3UgPe3Q8ObjDieUbjRL9iL_BRWcySD0ObhZL1jPAG5WCc3IJRze2jIBmrgEfWnBbzpvd2a8iicrkMZNrP356Zdn2Lx8oIJvuWx4XwHFXacYMO-PlHbfXNfg7bk80kB4G-B3gAqx6kAXFZWEx76T2tNckfPTMVIgWt5a4Lvxlv9rRIH0a7XgeJtfzBmdRRiY8dqTGWZ06QeZt3VeCvO-xRVD8b9HGe_2JgIaedRo7V6IU6HZ-5BwT3VVwySMU_SDMX5zOq00jA-j0",
       imageAlt: "Güneş enerji santrali ve şarj istasyonu projeleri",
-      link: "/hizmetler/enerji-taahhut-isleri",
+      link: "/hizmetler/enerji-taahhut",
     },
   ];
 

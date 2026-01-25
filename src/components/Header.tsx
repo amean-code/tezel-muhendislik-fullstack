@@ -100,7 +100,7 @@ export default function Header() {
                         Yedek Parça Satışı
                       </Link>
                       <Link
-                        href="/hizmetler/enerji-taahhut-isleri"
+                        href="/hizmetler/enerji-taahhut"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
                         onClick={closeServicesDropdown}
                       >

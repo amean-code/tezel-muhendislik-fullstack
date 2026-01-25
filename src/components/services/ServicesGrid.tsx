@@ -9,7 +9,7 @@ function getServiceUrl(slug: string): string {
     "asansor-modernizasyonu": "/hizmetler/asansor-modernizasyonu",
     "yuruyen-merdiven-bant-modernizasyonu": "/hizmetler/yuruyen-merdiven-bant-modernizasyonu",
     "yedek-parca-satisi": "/hizmetler/yedek-parca-satisi",
-    "enerji-taahhut-isleri": "/hizmetler/enerji-taahhut-isleri",
+    "enerji-taahhut-isleri": "/hizmetler/enerji-taahhut",
     "elektrik-elektronik-taahhut": "/hizmetler/elektrik-elektronik-taahhut",
     "test-denetim": "/hizmetler/test-denetim",
   };

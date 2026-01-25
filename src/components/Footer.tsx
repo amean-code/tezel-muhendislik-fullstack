@@ -96,7 +96,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/enerji-taahhut-isleri">
+                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/enerji-taahhut">
                   Enerji Taahhüt
                 </Link>
               </li>

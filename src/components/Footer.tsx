@@ -81,23 +81,33 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/periyodik-bakim">
-                  Periyodik Bakım
-                </Link>
-              </li>
-              <li>
                 <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/asansor-modernizasyonu">
-                  Modernizasyon
+                  Asansör Modernizasyonu
                 </Link>
               </li>
               <li>
-                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/yuruyen-merdiven-sistemleri">
-                  Yürüyen Merdiven Sistemleri
+                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/yuruyen-merdiven-bant-modernizasyonu">
+                  Yürüyen Merdiven/Bant Modernizasyonu
                 </Link>
               </li>
               <li>
-                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/elektrik-kontrol-sistemleri">
-                  Elektrik & Kontrol Sistemleri
+                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/yedek-parca-satisi">
+                  Yedek Parça Satışı
+                </Link>
+              </li>
+              <li>
+                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/enerji-taahhut-isleri">
+                  Enerji Taahhüt İşleri
+                </Link>
+              </li>
+              <li>
+                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/elektrik-elektronik-taahhut">
+                  Elektrik & Elektronik Taahhüt
+                </Link>
+              </li>
+              <li>
+                <Link className="text-gray-400 hover:text-accent transition-colors text-sm" href="/hizmetler/test-denetim">
+                  Test & Denetim
                 </Link>
               </li>
             </ul>

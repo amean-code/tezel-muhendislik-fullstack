@@ -1,7 +1,7 @@
 import PageSkeleton from "@/components/ui/PageSkeleton";
 
 /**
- * Elektrik & Kontrol Sistemleri sayfası için loading skeleton
+ * Enerji Taahhüt İşleri sayfası loading state
  */
 export default function Loading() {
   return <PageSkeleton />;

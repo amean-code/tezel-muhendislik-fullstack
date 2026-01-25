@@ -21,32 +21,32 @@ export const services: Service[] = [
       "Mevcut sistemlerin verimliliğini, güvenliğini ve konforunu artırmak için kapsamlı modernizasyon paketleri sunuyoruz. Enerji tasarrufu odaklı revizyonlar.",
   },
   {
-    slug: "periyodik-bakim",
-    icon: "build_circle",
-    title: "Periyodik Bakım",
+    slug: "yuruyen-merdiven-bant-modernizasyonu",
+    icon: "upgrade",
+    title: "Yürüyen Merdiven/Bant Modernizasyonu",
     description:
-      "EN 13015 standartlarına uygun, önleyici ve kestirimci bakım hizmetleri. 7/24 teknik destek ve arıza müdahale garantisi ile kesintisiz işletim.",
+      "Mevcut yürüyen merdiven ve bant sistemlerinizi modern teknolojilerle yenileyin. Güvenlik, enerji verimliliği ve performans artışı sağlıyoruz.",
   },
   {
-    slug: "proje-muhendislik",
-    icon: "engineering",
-    title: "Proje & Mühendislik",
+    slug: "yedek-parca-satisi",
+    icon: "inventory_2",
+    title: "Yürüyen Merdiven/Bant ve Asansör Yedek Parça Satışı",
     description:
-      "Trafik analizi, kuyu rölöve çalışmaları ve avan proje çizimleri. Binaların ihtiyacına özel, optimum trafik akışı sağlayan sistem tasarımları.",
+      "Geniş stok ağı ile orijinal ve sertifikalı yedek parça temini. Asansör, yürüyen merdiven ve bant sistemleri için kritik bileşenler ve hızlı lojistik çözümleri.",
   },
   {
-    slug: "yuruyen-merdiven-sistemleri",
-    icon: "escalator",
-    title: "Yürüyen Merdiven Sistemleri",
+    slug: "enerji-taahhut-isleri",
+    icon: "solar_power",
+    title: "Enerji Taahhüt İşleri",
     description:
-      "Ticari merkezler ve toplu taşıma alanları için ağır hizmet tipi yürüyen merdiven ve bant kurulumu. Güvenlik sensörleri ve otomasyon entegrasyonu.",
+      "Güneş Enerji Santralleri (GES) ve Elektrikli Araç Şarj İstasyonları kurulumu. Yenilenebilir enerji çözümleri ve sürdürülebilir altyapı projeleri.",
   },
   {
-    slug: "yedek-parca-tedarigi",
-    icon: "settings_suggest",
-    title: "Yedek Parça Tedariği",
+    slug: "elektrik-elektronik-taahhut",
+    icon: "smart_home",
+    title: "Elektrik & Elektronik Taahhüt İşleri",
     description:
-      "Geniş stok ağı ile orijinal ve sertifikalı yedek parça temini. Kritik bileşenler için hızlı lojistik çözümleri ve montaj desteği.",
+      "Villa elektrik, elektronik ve otomasyon projeleri. Akıllı ev sistemleri, KNX protokolü, güvenlik sistemleri ve enerji yönetimi çözümleri.",
   },
   {
     slug: "test-denetim",

@@ -1,7 +1,7 @@
 import PageSkeleton from "@/components/ui/PageSkeleton";
 
 /**
- * Periyodik Bakım sayfası için loading skeleton
+ * Yedek Parça Satışı sayfası loading state
  */
 export default function Loading() {
   return <PageSkeleton />;

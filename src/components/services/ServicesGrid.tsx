@@ -7,9 +7,11 @@ import { services } from "@/data/services";
 function getServiceUrl(slug: string): string {
   const urlMap: Record<string, string> = {
     "asansor-modernizasyonu": "/hizmetler/asansor-modernizasyonu",
-    "periyodik-bakim": "/hizmetler/periyodik-bakim",
-    "yuruyen-merdiven-sistemleri": "/hizmetler/yuruyen-merdiven-sistemleri",
-    "test-denetim": "/hizmetler", // Test & Denetim için henüz sayfa yok
+    "yuruyen-merdiven-bant-modernizasyonu": "/hizmetler/yuruyen-merdiven-bant-modernizasyonu",
+    "yedek-parca-satisi": "/hizmetler/yedek-parca-satisi",
+    "enerji-taahhut-isleri": "/hizmetler/enerji-taahhut-isleri",
+    "elektrik-elektronik-taahhut": "/hizmetler/elektrik-elektronik-taahhut",
+    "test-denetim": "/hizmetler/test-denetim",
   };
   return urlMap[slug] || "/hizmetler";
 }

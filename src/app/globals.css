@@ -9,8 +9,11 @@
   /* Renkler */
   --color-primary: #0b1b3d;
   --color-accent: #F28C28;
+  --color-brand-orange: #F28C28;
   --color-background-light: #f6f6f8;
   --color-background-dark: #121620;
+  --color-anthracite: #2E2E2E;
+  --color-border-color: #e2e8f0;
   
   /* Font */
   --font-display: var(--font-inter);
@@ -229,4 +232,13 @@ details > summary::-webkit-details-marker {
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
+}
+
+/* Admin Panel Styles */
+.table-row-even {
+  @apply bg-white;
+}
+
+.table-row-odd {
+  @apply bg-[#f2f4f7];
 }

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "TZ-X5 Dişlisiz Motor",
+    "model": "TZ-X5-DISLISIZ-MOTOR",
+    "category": "Motorlar",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD4eigxFIQKyJgh5Td5pJ7a9exdLnibLO5QUTTtUa9tcDL1gddhDVgpcK7Q2EiJmMDq6_PoQQg6SuBzzgM4mid7SvTmp6jh_RpFGhqDzoRYXH2EI2alQ9BWup7pqJhdUOYdLYVk34HynSwxb-tOI9Vbszyf1MrOIfgr_8AZsXBgXUgbJAE-UfR0u_Z8-RirMKK8-IWIK-H_ghOymECv92G6qu4eDpuZI6YSN-LiYduh3ClFbWcxK92rKoPHsr7Xz8YChFdUfSkkgpk",
+    "standards": [
+      "630",
+      "1.6",
+      "4.5"
+    ],
+    "lastUpdated": "25.01.2026",
+    "status": "active"
+  },
+  {
+    "id": "2",
+    "name": "Pro-Control V3 Pano",
+    "model": "PRO-CONTROL-V3-PANO",
+    "category": "Kumanda Panoları",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCboaMQayjXmx4qif-FOAZcoDgzlnLEIUc0IoJyYcedL6RGCiitvrxx-ECmFQix-_DM7XascE1teTaicntqR5WqpmeGZGihUmlcWHS5UACznnMBi7jL7e2h6N9TGDtbQeYc82ABxiNkqcTkBv_JHx5Qr9ooz84B49L2VSFQA9k3zOx0Fzn9ruMUw-BMlktDq2Yz4Oms3RnseBM28s2GpVRxEM3-JEao9hQVKFota8Ef8a2JQbwDxwCop5IU3b5z6kIlw7bKhfDBasU",
+    "standards": [
+      "VVVF Sürücü",
+      "Max 16",
+      "CANbus"
+    ],
+    "lastUpdated": "24.01.2026",
+    "status": "active"
+  },
+  {
+    "id": "3",
+    "name": "Otomatik Kapı MD-20",
+    "model": "OTOMATIK-KAPI-MD-20",
+    "category": "Kapı Sistemleri",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBK56Cb7TwZT4vjQGhsuRF_JssXyf8WZTuD_Pqn599su5HOmQ2IZGkSkK6xa7_ZskLTQitd4ESVRBt5P2oPfjCa9XVszRIVi9XtAbn52ZRvR9DqJv_lqd62nq1TuHgCaG1ZNdtmlvya7w6pyLEO0L8hm4i0L2wLNpUw-eMjOEn7g-gVME6rxXbPSas430atm4qiE8wyNwj77Qv3VSa0hjUkvBXj7KdSx3dtpQyPt0HUGYy2vOCvXHN8x6QzaD2DVZ3Bgogr9z4YiFc",
+    "standards": [
+      "800 - 1100",
+      "304 Paslanmaz"
+    ],
+    "lastUpdated": "23.01.2026",
+    "status": "active"
+  },
+  {
+    "id": "4",
+    "name": "Fren Bloğu SG-100",
+    "model": "FREN-BLOKU-SG-100",
+    "category": "Güvenlik Komponentleri",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1fq0Bbm6PEME_XHxEH-fQpg-FXApN7AQtOcnhXRxQYECtqfs_N2xZ6l4UTkOo-VwlY4NfVmCT0Nhumo69R8AFXvw5DwkSmf2qpriar-IGK7_niW7H3BiYxfRiC6xU_Nj57QA948vm-nWKy9MjNR7j6GhmCu4NVfLhzBFf7Fd9yqherbRLBRakk_tX89fNTBcQcTdeVxRQ480ofY_VxMS1IHstaXvcNvoKyi2R20Xr7GPi-qTHj3DG7LfBalNRI3RwgrRRjLFJjCM",
+    "standards": [
+      "2.5",
+      "Max 2500",
+      "EN 81-20/50"
+    ],
+    "lastUpdated": "22.01.2026",
+    "status": "active"
+  }
+]

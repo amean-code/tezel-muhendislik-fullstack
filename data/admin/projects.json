@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "AVM Yürüyen Merdiven Revizyonu",
+    "category": "escalator",
+    "location": "Mall of İstanbul, Başakşehir",
+    "equipment": "Kone TravelMaster 110",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDZTuX8o6R-NIPOB9lgbGt3Y9VuxCSV8tGfsHsGw2D16sgP8xTExugMEZu46_nn4DnlKHsjovNMHHTMvkQAr_8osecEIHNNlOaTiCrk500Tjcs8vQ4MbNAt6JLBOCK8iKs1whCHrET1Mx0m2gwTux5jQyJbT_PMvHDgCrBswoGNnkIIRLjhnWDm0pQU4PuNeMopKa_WdS69178oGKI3V8wRjY0p48wjHEmTX9pYqqHStLyCtK490t87_JqoQtfviHmRyOhh1s4Bw5U",
+    "imageAlt": "Escalator revision work in a shopping mall"
+  },
+  {
+    "id": "2",
+    "title": "Plaza Asansör Modernizasyonu",
+    "category": "modernization",
+    "location": "Maslak 42 Plaza, Sarıyer",
+    "equipment": "Schindler 5500 Series",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD-UGPrk16D1qsm_mHwFIMp5gw0ZwlXzF_sc9rokqZj-cFZtslZiDTL-QAISxu7h-SC3mmMLMNWyKkwAZDjjlwMUF-05hi65yxdGvsDoEcmDdZXpu8ndVlywhY_J0BK7k9BeEAHAyYRKM2yoG0bDJ_0T4LLTMcMvBCJczqT6m2TIe8NHjfLQSpdCkNorVebCILZT7A6SB6MwNr1JAOSnKfklcMio0CLX0Cc7OVf39Lp-a822Sc-b0y6qXClK0tpEBFY24iMHzqJM-4",
+    "imageAlt": "Modern glass elevator in a corporate plaza lobby"
+  },
+  {
+    "id": "3",
+    "title": "Hastane Sedye Asansörü",
+    "category": "elevator-systems",
+    "location": "Başakşehir Şehir Hastanesi",
+    "equipment": "Gen2 Comfort Heavy Duty",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBCVQYBp2llOf2HUEeo2O9rEohj4QG9URhWtM78TVU5WCnV5yqZ_1w4L-DzO1kK9XFIXK5IQiYw59Fk9MiPHj-g-vNv8PhRln4vsneIzsbiMCAdxf7QE4AMEbh1HfIOIkY_BrN3o4qnbyFPspOi0ZgB12QgdOrwofXsKrBVKRi41DBksooAHZhgHxnMVnVPutrmFeBb47--UtmmXRalULdKF6UOw6CWqDISbFn2H8F_zoRHOSEa3vg4e_NM9_Nwov1mYup7lQIu2PU",
+    "imageAlt": "Hospital stretcher elevator interior view"
+  },
+  {
+    "id": "4",
+    "title": "Metro Yürüyen Bant Sistemi",
+    "category": "escalator",
+    "location": "Kadıköy Metro İstasyonu",
+    "equipment": "ThyssenKrupp Velino",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCoiSjmxljX1cKA_trm8pJus5J_l4VzgVpaEvrkE4YqxZPUNL9zvdCu9p9EPzZ7edDW73kf-93sPbjG_w77eT7ivXgk4eFrb-0XmtJg74uIuuJcv5tJzKPoABpOnfjKihkRjNmiD6ztJ7ekcDzOqLn-eSaSnhCJz6x3q9bEaXLp7l9PNATqvn67iL5DGac-8veI67sI0zs_QTI6Kp8OkVghuF4zNP9UqEbDRgoZJNur2rvolj34zIE_3Kr5xsxnPfYRIoEN7oaKzAE",
+    "imageAlt": "Moving walkway in a metro station"
+  },
+  {
+    "id": "5",
+    "title": "Konut Asansör Kurulumu",
+    "category": "elevator-systems",
+    "location": "Ataşehir Lüks Konutları",
+    "equipment": "Hidrolik Sistem 2.0",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBD14HBJYDKdxdcxYnEJmrC73Y3qOLCb0RJTpfK47c_uuN5-CEdwMQ0yFW0DVncvxYJNE9gAV0vCvmV5tdgkv-Q6XILEkj4S0p-4-_jWdCAg3Z6VWSKojc0e9GR0dQx_JN9WECutg-8UDhfYJMZyxcMXrToNbve4uNAvRUTr6DCmRD_jhkOm2tB2k4-NZYUS8bqozT45g1Psg2ToFloolWgUC57edn_4-LjSzlf0SMyYrXK1IJm6hjN-TuofJknKV1xWOym3neaRdA",
+    "imageAlt": "Residential building elevator installation site"
+  },
+  {
+    "id": "6",
+    "title": "Otel Panoramik Asansör",
+    "category": "elevator-systems",
+    "location": "Bosphorus Hotel, Beşiktaş",
+    "equipment": "Ultra Şeffaf Cam Kabin",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDIyRymCbIg6-SnFRLvKYCTnUsFR8Ngs3yYYDN4KM0tAXunjNM3Ua76A1Cd28R_1vF_xC7SveFxRYTBPr9ilR9-alTKpKAhQQ2XWaxAKE3CyhqY0V0k02Vhz3cvBs_UgQhdBf9jTRXfZzY1zd4qZmeLaWnABWXrS45WVvzUxJVxhLx7GWr_QC2f4fo_kOdX4UqZZGfXREjtSpFmCJvuykcTp1n2mMJ1HvqiOpUwiBng6DyWIGxgpo8lylpdO58khY0DOgEIU3TLG_E",
+    "imageAlt": "Panoramic glass elevator with city view in a hotel"
+  }
+]

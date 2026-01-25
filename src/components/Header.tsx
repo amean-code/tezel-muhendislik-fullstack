@@ -86,25 +86,39 @@ export default function Header() {
                         Asansör Modernizasyonu
                       </Link>
                       <Link
-                        href="/hizmetler/periyodik-bakim"
+                        href="/hizmetler/yuruyen-merdiven-bant-modernizasyonu"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
                         onClick={closeServicesDropdown}
                       >
-                        Periyodik Bakım
+                        Yürüyen Merdiven/Bant Modernizasyonu
                       </Link>
                       <Link
-                        href="/hizmetler/yuruyen-merdiven-sistemleri"
+                        href="/hizmetler/yedek-parca-satisi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
                         onClick={closeServicesDropdown}
                       >
-                        Yürüyen Merdiven Sistemleri
+                        Yedek Parça Satışı
                       </Link>
                       <Link
-                        href="/hizmetler/elektrik-kontrol-sistemleri"
+                        href="/hizmetler/enerji-taahhut-isleri"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
                         onClick={closeServicesDropdown}
                       >
-                        Elektrik & Kontrol Sistemleri
+                        Enerji Taahhüt İşleri
+                      </Link>
+                      <Link
+                        href="/hizmetler/elektrik-elektronik-taahhut"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
+                        onClick={closeServicesDropdown}
+                      >
+                        Elektrik & Elektronik Taahhüt
+                      </Link>
+                      <Link
+                        href="/hizmetler/test-denetim"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-accent transition-colors"
+                        onClick={closeServicesDropdown}
+                      >
+                        Test & Denetim
                       </Link>
                     </div>
                   </div>

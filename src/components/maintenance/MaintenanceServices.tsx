@@ -1,3 +1,7 @@
+"use client";
+
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
+
 /**
  * MaintenanceServices komponenti - Bakım hizmet kapsamı kartları
  */
@@ -52,10 +56,8 @@ export default function MaintenanceServices() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-gray-50 border border-gray-100 p-8 rounded-sm hover:border-accent/50 transition-colors group"
-            >
+            <AnimatedCard key={index} index={index}>
+              <div className="bg-gray-50 border border-gray-100 p-8 rounded-sm hover:border-accent/50 transition-colors group h-full">
               <div className="mb-6 inline-flex items-center justify-center p-4 bg-white shadow-sm rounded-sm group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-primary text-[40px]">
                   {service.icon}
@@ -67,7 +69,8 @@ export default function MaintenanceServices() {
                   <li key={itemIndex}>{item}</li>
                 ))}
               </ul>
-            </div>
+              </div>
+            </AnimatedCard>
           ))}
         </div>
       </div>

@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * ServiceScope komponenti - Hizmet kapsamı bölümü
@@ -44,22 +47,23 @@ export default function ServiceScope({
             <p className="text-gray-600 mb-8 leading-relaxed text-lg">{description}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {items.map((item, index) => (
-                <div
-                  key={index}
-                  className={`bg-white p-6 shadow-sm hover:shadow-md transition-shadow border-l-4 ${
-                    item.borderColor === "accent" ? "border-accent" : "border-primary"
-                  }`}
-                >
-                  <span
-                    className={`material-symbols-outlined text-3xl mb-3 ${
-                      item.borderColor === "accent" ? "text-accent" : "text-primary"
+                <AnimatedCard key={index} index={index}>
+                  <div
+                    className={`bg-white p-6 shadow-sm hover:shadow-md transition-shadow border-l-4 h-full ${
+                      item.borderColor === "accent" ? "border-accent" : "border-primary"
                     }`}
                   >
-                    {item.icon}
-                  </span>
-                  <h4 className="text-lg font-bold text-primary mb-2">{item.title}</h4>
-                  <p className="text-sm text-gray-500">{item.description}</p>
-                </div>
+                    <span
+                      className={`material-symbols-outlined text-3xl mb-3 ${
+                        item.borderColor === "accent" ? "text-accent" : "text-primary"
+                      }`}
+                    >
+                      {item.icon}
+                    </span>
+                    <h4 className="text-lg font-bold text-primary mb-2">{item.title}</h4>
+                    <p className="text-sm text-gray-500">{item.description}</p>
+                  </div>
+                </AnimatedCard>
               ))}
             </div>
           </div>

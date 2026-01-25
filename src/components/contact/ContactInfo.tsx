@@ -1,4 +1,7 @@
+"use client";
+
 import { contactInfo } from "@/data/contact";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * ContactInfo komponenti - İletişim bilgileri bölümü
@@ -18,51 +21,57 @@ export default function ContactInfo() {
         </div>
 
         {/* Adres */}
-        <div className="flex items-start gap-4">
-          <div className="flex-shrink-0 size-12 bg-gray-100 flex items-center justify-center rounded-sm">
-            <span className="material-symbols-outlined text-primary text-2xl">location_on</span>
+        <AnimatedCard index={0}>
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 size-12 bg-gray-100 flex items-center justify-center rounded-sm">
+              <span className="material-symbols-outlined text-primary text-2xl">location_on</span>
+            </div>
+            <div>
+              <h4 className="text-primary font-bold text-lg">{contactInfo.office.title}</h4>
+              <p className="text-gray-600 mt-1">
+                {contactInfo.office.address}
+                {contactInfo.office.addressLine2 && (
+                  <>
+                    <br />
+                    {contactInfo.office.addressLine2}
+                  </>
+                )}
+              </p>
+            </div>
           </div>
-          <div>
-            <h4 className="text-primary font-bold text-lg">{contactInfo.office.title}</h4>
-            <p className="text-gray-600 mt-1">
-              {contactInfo.office.address}
-              {contactInfo.office.addressLine2 && (
-                <>
-                  <br />
-                  {contactInfo.office.addressLine2}
-                </>
-              )}
-            </p>
-          </div>
-        </div>
+        </AnimatedCard>
 
         {/* Telefon */}
-        <div className="flex items-start gap-4">
-          <div className="flex-shrink-0 size-12 bg-gray-100 flex items-center justify-center rounded-sm">
-            <span className="material-symbols-outlined text-primary text-2xl">call</span>
+        <AnimatedCard index={1}>
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 size-12 bg-gray-100 flex items-center justify-center rounded-sm">
+              <span className="material-symbols-outlined text-primary text-2xl">call</span>
+            </div>
+            <div>
+              <h4 className="text-primary font-bold text-lg">Telefon</h4>
+              <p className="text-gray-600 mt-1">{contactInfo.phone.number}</p>
+              {contactInfo.phone.hours && (
+                <p className="text-gray-500 text-sm mt-1">{contactInfo.phone.hours}</p>
+              )}
+            </div>
           </div>
-          <div>
-            <h4 className="text-primary font-bold text-lg">Telefon</h4>
-            <p className="text-gray-600 mt-1">{contactInfo.phone.number}</p>
-            {contactInfo.phone.hours && (
-              <p className="text-gray-500 text-sm mt-1">{contactInfo.phone.hours}</p>
-            )}
-          </div>
-        </div>
+        </AnimatedCard>
 
         {/* E-posta */}
-        <div className="flex items-start gap-4">
-          <div className="flex-shrink-0 size-12 bg-gray-100 flex items-center justify-center rounded-sm">
-            <span className="material-symbols-outlined text-primary text-2xl">mail</span>
+        <AnimatedCard index={2}>
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 size-12 bg-gray-100 flex items-center justify-center rounded-sm">
+              <span className="material-symbols-outlined text-primary text-2xl">mail</span>
+            </div>
+            <div>
+              <h4 className="text-primary font-bold text-lg">E-posta</h4>
+              <p className="text-gray-600 mt-1">{contactInfo.email.primary}</p>
+              {contactInfo.email.sales && (
+                <p className="text-gray-600 mt-0.5">{contactInfo.email.sales}</p>
+              )}
+            </div>
           </div>
-          <div>
-            <h4 className="text-primary font-bold text-lg">E-posta</h4>
-            <p className="text-gray-600 mt-1">{contactInfo.email.primary}</p>
-            {contactInfo.email.sales && (
-              <p className="text-gray-600 mt-0.5">{contactInfo.email.sales}</p>
-            )}
-          </div>
-        </div>
+        </AnimatedCard>
       </div>
 
       {/* Harita */}

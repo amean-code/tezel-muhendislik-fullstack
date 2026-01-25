@@ -1,4 +1,7 @@
+"use client";
+
 import { contactInfo } from "@/data/contact";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * EmergencySection komponenti - Acil durum hattı bölümü
@@ -9,7 +12,8 @@ export default function EmergencySection() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Acil Durum Kartı */}
-          <div className="bg-white p-8 border border-gray-200 rounded-sm shadow-sm flex flex-col sm:flex-row items-center gap-6">
+          <AnimatedCard index={0}>
+            <div className="bg-white p-8 border border-gray-200 rounded-sm shadow-sm flex flex-col sm:flex-row items-center gap-6">
             <div className="size-16 bg-red-50 text-red-600 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
               <span className="material-symbols-outlined text-4xl">emergency_home</span>
             </div>
@@ -24,10 +28,12 @@ export default function EmergencySection() {
                 {contactInfo.emergency.phone}
               </a>
             </div>
-          </div>
+            </div>
+          </AnimatedCard>
 
           {/* Mühendislik Garantisi */}
-          <div className="flex flex-col gap-4 text-center md:text-left">
+          <AnimatedCard index={1}>
+            <div className="flex flex-col gap-4 text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-2 text-primary font-bold text-lg">
               <span className="material-symbols-outlined text-accent">verified_user</span>
               <span>Mühendislik Garantisi</span>
@@ -65,7 +71,8 @@ export default function EmergencySection() {
               </div>
               <span className="text-sm font-semibold text-gray-500">Uzman Mühendis Kadrosu</span>
             </div>
-          </div>
+            </div>
+          </AnimatedCard>
         </div>
       </div>
     </section>

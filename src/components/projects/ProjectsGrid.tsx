@@ -3,6 +3,7 @@
 import { Project, ProjectCategory } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 import { useState, useEffect, useMemo } from "react";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * ProjectsGrid komponenti - Proje kartları grid'i
@@ -35,8 +36,10 @@ export default function ProjectsGrid({ projects, activeCategory }: ProjectsGridP
       <div className="bg-white py-12 md:py-16">
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {displayedProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+            {displayedProjects.map((project, index) => (
+              <AnimatedCard key={project.id} index={index}>
+                <ProjectCard project={project} />
+              </AnimatedCard>
             ))}
           </div>
 

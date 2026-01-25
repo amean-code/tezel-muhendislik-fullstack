@@ -1,12 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 /**
  * MaintenanceStandards komponenti - Standartlar ve güvenlik bölümü
  */
 export default function MaintenanceStandards() {
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <AnimatedSection animationType="slideInRight" delay={0}>
+      <section className="bg-white py-24">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gray-100 rounded-md overflow-hidden shadow-sm border border-gray-200">
           <div className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
@@ -68,6 +72,7 @@ export default function MaintenanceStandards() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </AnimatedSection>
   );
 }

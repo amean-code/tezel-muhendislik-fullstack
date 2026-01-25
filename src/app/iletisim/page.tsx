@@ -3,6 +3,7 @@ import ContactHero from "@/components/contact/ContactHero";
 import ContactInfo from "@/components/contact/ContactInfo";
 import ContactForm from "@/components/contact/ContactForm";
 import EmergencySection from "@/components/contact/EmergencySection";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "İletişim ve Teklif Formu - Tezel Mühendislik",
@@ -24,16 +25,24 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <ContactHero />
+      <AnimatedSection animationType="fadeIn" delay={0}>
+        <ContactHero />
+      </AnimatedSection>
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-[1280px] mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-            <ContactInfo />
-            <ContactForm />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            <AnimatedSection animationType="slideInLeft" delay={100}>
+              <ContactInfo />
+            </AnimatedSection>
+            <AnimatedSection animationType="slideInRight" delay={200}>
+              <ContactForm />
+            </AnimatedSection>
           </div>
         </div>
       </section>
-      <EmergencySection />
+      <AnimatedSection animationType="fadeInUp" delay={300}>
+        <EmergencySection />
+      </AnimatedSection>
     </>
   );
 }

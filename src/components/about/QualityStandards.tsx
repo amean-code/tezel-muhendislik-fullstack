@@ -1,3 +1,7 @@
+"use client";
+
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
+
 /**
  * QualityStandards komponenti - Kalite standartları bölümü
  */
@@ -22,12 +26,14 @@ export default function QualityStandards() {
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center opacity-60 grayscale">
           {standards.map((standard, index) => (
-            <div key={index} className="flex flex-col items-center justify-center">
-              <span className="text-3xl font-black text-gray-500 tracking-tighter">
-                {standard.name}
-              </span>
-              <span className="text-[10px] text-gray-400 font-bold mt-1">{standard.code}</span>
-            </div>
+            <AnimatedCard key={index} index={index}>
+              <div className="flex flex-col items-center justify-center">
+                <span className="text-3xl font-black text-gray-500 tracking-tighter">
+                  {standard.name}
+                </span>
+                <span className="text-[10px] text-gray-400 font-bold mt-1">{standard.code}</span>
+              </div>
+            </AnimatedCard>
           ))}
         </div>
       </div>

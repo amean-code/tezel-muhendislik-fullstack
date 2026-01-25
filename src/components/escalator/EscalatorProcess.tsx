@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * EscalatorProcess komponenti - Teknik yaklaşım süreç adımları
@@ -54,10 +57,8 @@ export default function EscalatorProcess() {
           <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -translate-y-1/2 z-0"></div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
             {steps.map((step, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded border border-gray-100 shadow-lg flex flex-col items-center text-center relative overflow-hidden group"
-              >
+              <AnimatedCard key={index} index={index}>
+                <div className="bg-white p-6 rounded border border-gray-100 shadow-lg flex flex-col items-center text-center relative overflow-hidden group h-full">
                 <div className="absolute inset-0 opacity-[0.06] group-hover:opacity-[0.12] transition-opacity duration-300 pointer-events-none">
                   <Image
                     alt={step.imageAlt}
@@ -75,7 +76,8 @@ export default function EscalatorProcess() {
                   </h4>
                   <p className="text-sm text-gray-500">{step.description}</p>
                 </div>
-              </div>
+                </div>
+              </AnimatedCard>
             ))}
           </div>
         </div>

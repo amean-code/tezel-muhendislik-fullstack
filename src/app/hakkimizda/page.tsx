@@ -5,6 +5,7 @@ import VisionMission from "@/components/about/VisionMission";
 import ExpertiseAreas from "@/components/about/ExpertiseAreas";
 import QualityStandards from "@/components/about/QualityStandards";
 import AboutCTA from "@/components/about/AboutCTA";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "Hakkımızda - Kurumsal Mühendislik Profili | Tezel Mühendislik",
@@ -26,12 +27,24 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <AboutHero />
-      <HeritageSection />
-      <VisionMission />
-      <ExpertiseAreas />
-      <QualityStandards />
-      <AboutCTA />
+      <AnimatedSection animationType="fadeIn" delay={0}>
+        <AboutHero />
+      </AnimatedSection>
+      <AnimatedSection animationType="slideInLeft" delay={100}>
+        <HeritageSection />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInUp" delay={200}>
+        <VisionMission />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInUp" delay={300}>
+        <ExpertiseAreas />
+      </AnimatedSection>
+      <AnimatedSection animationType="scaleIn" delay={400}>
+        <QualityStandards />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInUp" delay={500}>
+        <AboutCTA />
+      </AnimatedSection>
     </>
   );
 }

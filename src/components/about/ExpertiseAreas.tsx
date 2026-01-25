@@ -1,3 +1,7 @@
+"use client";
+
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
+
 /**
  * ExpertiseAreas komponenti - Uzmanlık alanları bölümü
  */
@@ -46,13 +50,15 @@ export default function ExpertiseAreas() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {areas.map((area, index) => (
-            <div key={index} className="flex flex-col items-center text-center group">
+            <AnimatedCard key={index} index={index}>
+              <div className="flex flex-col items-center text-center group">
               <div className="size-20 bg-gray-50 flex items-center justify-center text-gray-800 mb-6 transition-colors group-hover:bg-primary group-hover:text-white">
                 <span className="material-symbols-outlined text-4xl">{area.icon}</span>
               </div>
               <h5 className="text-primary text-xl font-bold mb-3">{area.title}</h5>
               <p className="text-gray-500 text-sm leading-relaxed px-4">{area.description}</p>
-            </div>
+              </div>
+            </AnimatedCard>
           ))}
         </div>
       </div>

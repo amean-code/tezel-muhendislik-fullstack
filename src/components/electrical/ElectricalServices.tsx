@@ -1,3 +1,7 @@
+"use client";
+
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
+
 /**
  * ElectricalServices komponenti - Elektrik ve kontrol sistemleri hizmet kartları
  */
@@ -40,10 +44,8 @@ export default function ElectricalServices() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-200 p-8 rounded-sm hover:border-gray-400 transition-all duration-300 group shadow-sm"
-            >
+            <AnimatedCard key={index} index={index}>
+              <div className="bg-white border border-gray-200 p-8 rounded-sm hover:border-gray-400 transition-all duration-300 group shadow-sm h-full">
               <div className="mb-6 inline-flex items-center justify-center p-4 bg-gray-50 border border-gray-100 rounded-sm">
                 <span className="material-symbols-outlined text-primary text-[40px]">
                   {service.icon}
@@ -51,7 +53,8 @@ export default function ElectricalServices() {
               </div>
               <h3 className="text-xl font-display font-bold text-primary mb-4">{service.title}</h3>
               <p className="text-gray-600 leading-relaxed text-sm">{service.description}</p>
-            </div>
+              </div>
+            </AnimatedCard>
           ))}
         </div>
       </div>

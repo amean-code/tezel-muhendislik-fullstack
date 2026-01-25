@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * ElectricalApproach komponenti - Teknik yaklaşım ve mühendislik standartları bölümü
@@ -48,15 +51,17 @@ export default function ElectricalApproach() {
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-accent mt-1">
-                    {feature.icon}
-                  </span>
-                  <div className="flex-1">
-                    <h4 className="font-display font-bold text-primary text-lg">{feature.title}</h4>
-                    <p className="text-sm text-gray-500">{feature.description}</p>
-                  </div>
-                </li>
+                <AnimatedCard key={index} index={index}>
+                  <li className="flex items-start gap-3">
+                    <span className="material-symbols-outlined text-accent mt-1">
+                      {feature.icon}
+                    </span>
+                    <div className="flex-1">
+                      <h4 className="font-display font-bold text-primary text-lg">{feature.title}</h4>
+                      <p className="text-sm text-gray-500">{feature.description}</p>
+                    </div>
+                  </li>
+                </AnimatedCard>
               ))}
             </ul>
           </div>

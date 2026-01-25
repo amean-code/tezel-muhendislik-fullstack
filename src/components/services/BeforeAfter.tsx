@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * BeforeAfter komponenti - Önce/Sonra karşılaştırması
@@ -28,7 +31,8 @@ export default function BeforeAfter({ title, subtitle, items }: BeforeAfterProps
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {items.map((item, index) => (
-            <div key={index} className="group relative overflow-hidden shadow-lg">
+            <AnimatedCard key={index} index={index}>
+              <div className="group relative overflow-hidden shadow-lg">
               <div
                 className={`absolute top-4 left-4 z-20 ${
                   item.labelColor === "red" ? "bg-red-600" : "bg-green-600"
@@ -56,7 +60,8 @@ export default function BeforeAfter({ title, subtitle, items }: BeforeAfterProps
                   <p className="text-gray-300 text-sm">{item.description}</p>
                 </div>
               </div>
-            </div>
+              </div>
+            </AnimatedCard>
           ))}
         </div>
       </div>

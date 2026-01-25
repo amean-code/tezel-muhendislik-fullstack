@@ -130,12 +130,6 @@ export default function Header() {
                 Hakkımızda
               </Link>
               <Link
-                href="/bilgi-merkezi"
-                className="text-gray-700 text-sm font-semibold hover:text-accent transition-colors"
-              >
-                Bilgi Merkezi
-              </Link>
-              <Link
                 href="/iletisim"
                 className="text-gray-700 text-sm font-semibold hover:text-accent transition-colors"
               >

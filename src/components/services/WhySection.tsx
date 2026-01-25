@@ -1,3 +1,7 @@
+"use client";
+
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
+
 /**
  * WhySection komponenti - Neden bu hizmet? bölümü
  */
@@ -29,28 +33,27 @@ export default function WhySection({ badge, title, subtitle, cards }: WhySection
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {cards.map((card, index) => (
-            <div
-              key={index}
-              className="bg-gray-50 border border-gray-100 p-8 hover:border-accent/50 transition-colors group"
-            >
-              <div className="mb-6 inline-flex items-center justify-center p-4 bg-white shadow-sm group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-primary text-[40px]">{card.icon}</span>
+            <AnimatedCard key={index} index={index}>
+              <div className="bg-gray-50 border border-gray-100 p-8 hover:border-accent/50 transition-colors group h-full">
+                <div className="mb-6 inline-flex items-center justify-center p-4 bg-white shadow-sm group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-primary text-[40px]">{card.icon}</span>
+                </div>
+                <h3 className="text-xl font-display font-bold text-primary mb-4">{card.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {card.strongText && card.description.includes(card.strongText) ? (
+                    <>
+                      {card.description.substring(0, card.description.indexOf(card.strongText))}
+                      <strong>{card.strongText}</strong>
+                      {card.description.substring(
+                        card.description.indexOf(card.strongText) + card.strongText.length
+                      )}
+                    </>
+                  ) : (
+                    card.description
+                  )}
+                </p>
               </div>
-              <h3 className="text-xl font-display font-bold text-primary mb-4">{card.title}</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                {card.strongText && card.description.includes(card.strongText) ? (
-                  <>
-                    {card.description.substring(0, card.description.indexOf(card.strongText))}
-                    <strong>{card.strongText}</strong>
-                    {card.description.substring(
-                      card.description.indexOf(card.strongText) + card.strongText.length
-                    )}
-                  </>
-                ) : (
-                  card.description
-                )}
-              </p>
-            </div>
+            </AnimatedCard>
           ))}
         </div>
       </div>

@@ -1,3 +1,7 @@
+"use client";
+
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
+
 /**
  * MaintenanceProcess komponenti - Bakım süreci adımları
  */
@@ -39,10 +43,8 @@ export default function MaintenanceProcess() {
           <div className="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-gray-300 z-0"></div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
             {steps.map((step, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center group cursor-default"
-              >
+              <AnimatedCard key={index} index={index}>
+                <div className="flex flex-col items-center text-center group cursor-default">
                 <div
                   className={`w-20 h-20 bg-white border-4 border-white ring-2 ${
                     index === 0 ? "ring-accent" : "ring-gray-300 group-hover:ring-accent"
@@ -54,7 +56,8 @@ export default function MaintenanceProcess() {
                 </div>
                 <h4 className="text-lg font-display font-bold text-primary mb-2">{step.title}</h4>
                 <p className="text-sm text-gray-500 px-2">{step.description}</p>
-              </div>
+                </div>
+              </AnimatedCard>
             ))}
           </div>
         </div>

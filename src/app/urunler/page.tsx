@@ -4,6 +4,7 @@ import ProductsHeader from "@/components/products/ProductsHeader";
 import ProductGrid from "@/components/products/ProductGrid";
 import Pagination from "@/components/products/Pagination";
 import { products } from "@/data/products";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "Asansör Bileşenleri - Tezel Mühendislik",
@@ -22,16 +23,26 @@ export const metadata: Metadata = {
  */
 export default function ProductsPage() {
   return (
-    <div className="mx-auto flex w-full max-w-[1440px] flex-1 items-start gap-8 px-4 sm:px-6 lg:px-8 py-8">
-      {/* Sidebar Filtreler */}
-      <SidebarFilters />
+    <AnimatedSection animationType="fadeInUp" delay={0}>
+      <div className="mx-auto flex w-full max-w-[1440px] flex-1 items-start gap-8 px-4 sm:px-6 lg:px-8 py-8">
+        {/* Sidebar Filtreler */}
+        <AnimatedSection animationType="slideInLeft" delay={100}>
+          <SidebarFilters />
+        </AnimatedSection>
 
-      {/* Ana İçerik */}
-      <div className="flex-1">
-        <ProductsHeader totalProducts={products.length} />
-        <ProductGrid />
-        <Pagination />
+        {/* Ana İçerik */}
+        <div className="flex-1">
+          <AnimatedSection animationType="fadeInUp" delay={200}>
+            <ProductsHeader totalProducts={products.length} />
+          </AnimatedSection>
+          <AnimatedSection animationType="fadeInUp" delay={300}>
+            <ProductGrid />
+          </AnimatedSection>
+          <AnimatedSection animationType="fadeInUp" delay={400}>
+            <Pagination />
+          </AnimatedSection>
+        </div>
       </div>
-    </div>
+    </AnimatedSection>
   );
 }

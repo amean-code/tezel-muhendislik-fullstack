@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * EscalatorServices komponenti - Yürüyen merdiven hizmet kapsamı kartları
@@ -62,10 +65,8 @@ export default function EscalatorServices() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-background-light rounded-lg border border-gray-200 flex flex-col group hover:border-accent transition-colors duration-300 overflow-hidden"
-            >
+            <AnimatedCard key={index} index={index}>
+              <div className="bg-background-light rounded-lg border border-gray-200 flex flex-col group hover:border-accent transition-colors duration-300 overflow-hidden h-full">
               <div className="h-48 relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary/30 mix-blend-multiply z-10 transition-opacity duration-300 group-hover:opacity-20"></div>
                 <Image
@@ -101,7 +102,8 @@ export default function EscalatorServices() {
                   </ul>
                 </div>
               </div>
-            </div>
+              </div>
+            </AnimatedCard>
           ))}
         </div>
       </div>

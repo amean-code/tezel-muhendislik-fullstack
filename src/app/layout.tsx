@@ -41,7 +41,7 @@ export default function RootLayout({
         className={`${inter.variable} antialiased bg-background-light text-primary font-display overflow-x-hidden flex flex-col min-h-screen`}
       >
         <Header />
-        <main className="flex-grow pb-20">{children}</main>
+        <main className="flex-grow pb-20 page-content">{children}</main>
         <Footer />
         <ContactFloatingButtons />
       </body>

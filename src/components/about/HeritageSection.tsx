@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * HeritageSection komponenti - Mühendislik mirasımız bölümü
@@ -35,10 +38,12 @@ export default function HeritageSection() {
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               {features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-accent">check_circle</span>
-                  <span className="text-primary font-semibold text-sm">{feature}</span>
-                </li>
+                <AnimatedCard key={index} index={index}>
+                  <li className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-accent">check_circle</span>
+                    <span className="text-primary font-semibold text-sm">{feature}</span>
+                  </li>
+                </AnimatedCard>
               ))}
             </ul>
           </div>

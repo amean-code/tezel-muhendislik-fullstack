@@ -1,10 +1,15 @@
+"use client";
+
+import AnimatedSection from "@/components/ui/AnimatedSection";
+
 /**
  * ElectricalStandards komponenti - Standartlar ve sertifikalar bölümü
  */
 export default function ElectricalStandards() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <AnimatedSection animationType="fadeInUp" delay={0}>
+      <section className="py-16 bg-white">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 border-y border-gray-100 py-10">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full">
@@ -49,6 +54,7 @@ export default function ElectricalStandards() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </AnimatedSection>
   );
 }

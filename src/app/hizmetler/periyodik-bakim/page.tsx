@@ -4,6 +4,7 @@ import MaintenanceServices from "@/components/maintenance/MaintenanceServices";
 import MaintenanceProcess from "@/components/maintenance/MaintenanceProcess";
 import MaintenanceStandards from "@/components/maintenance/MaintenanceStandards";
 import MaintenanceCTA from "@/components/maintenance/MaintenanceCTA";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "Bakım & Onarım Hizmetleri - Tezel Mühendislik",
@@ -25,11 +26,21 @@ export const metadata: Metadata = {
 export default function MaintenancePage() {
   return (
     <>
-      <MaintenanceHero />
-      <MaintenanceServices />
-      <MaintenanceProcess />
-      <MaintenanceStandards />
-      <MaintenanceCTA />
+      <AnimatedSection animationType="fadeIn" delay={0}>
+        <MaintenanceHero />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInUp" delay={100}>
+        <MaintenanceServices />
+      </AnimatedSection>
+      <AnimatedSection animationType="scaleIn" delay={200}>
+        <MaintenanceProcess />
+      </AnimatedSection>
+      <AnimatedSection animationType="slideInRight" delay={300}>
+        <MaintenanceStandards />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInUp" delay={400}>
+        <MaintenanceCTA />
+      </AnimatedSection>
     </>
   );
 }

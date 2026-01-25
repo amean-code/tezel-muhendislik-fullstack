@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { blogs, categoryLabels, type Blog, type BlogCategory } from "@/data/blogs";
+import { AnimatedCard } from "@/components/ui/AnimatedSection";
 
 /**
  * BlogGrid komponenti - Blog makalelerini grid formatında gösterir
@@ -100,8 +101,10 @@ export default function BlogGrid() {
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {regularBlogs.map((blog) => (
-            <BlogCard key={blog.id} blog={blog} />
+          {regularBlogs.map((blog, index) => (
+            <AnimatedCard key={blog.id} index={index}>
+              <BlogCard blog={blog} />
+            </AnimatedCard>
           ))}
         </div>
 

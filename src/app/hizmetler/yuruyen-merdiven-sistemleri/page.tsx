@@ -4,6 +4,7 @@ import EscalatorServices from "@/components/escalator/EscalatorServices";
 import EscalatorStandards from "@/components/escalator/EscalatorStandards";
 import EscalatorProcess from "@/components/escalator/EscalatorProcess";
 import EscalatorCTA from "@/components/escalator/EscalatorCTA";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "Yürüyen Merdiven Sistemleri - Tezel Mühendislik",
@@ -25,11 +26,21 @@ export const metadata: Metadata = {
 export default function EscalatorPage() {
   return (
     <>
-      <EscalatorHero />
-      <EscalatorServices />
-      <EscalatorStandards />
-      <EscalatorProcess />
-      <EscalatorCTA />
+      <AnimatedSection animationType="fadeIn" delay={0}>
+        <EscalatorHero />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInUp" delay={100}>
+        <EscalatorServices />
+      </AnimatedSection>
+      <AnimatedSection animationType="slideInRight" delay={200}>
+        <EscalatorStandards />
+      </AnimatedSection>
+      <AnimatedSection animationType="scaleIn" delay={300}>
+        <EscalatorProcess />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInUp" delay={400}>
+        <EscalatorCTA />
+      </AnimatedSection>
     </>
   );
 }

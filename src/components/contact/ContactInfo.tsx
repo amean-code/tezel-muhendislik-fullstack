@@ -76,18 +76,26 @@ export default function ContactInfo() {
 
       {/* Harita */}
       <div className="w-full h-64 bg-gray-100 border border-gray-200 rounded-sm overflow-hidden relative">
-        <img
-          alt="Harita Konumu"
-          className="w-full h-full object-cover opacity-20 grayscale"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVmIYjRNf4aPF0vHZ04zcoTzq7pbtgvtF6yjKzb259RA5_tywUAgu8MoTbdok5l5BvWEqdGQpllfuyZW1Pj378HaVaU7TZyEik_ZGbE63_9MSIhHy2f-udsD8O1GSk7emAevS0w1facItZlIwnw-ac-16efs8aMumfrLf-m0fPbe1NkhmG8DpFunlCRWYaWi7mBc2pxlvO6_h2x0yhubQfAhI8RKnFc2U9vtzxPDcx7LxsQNYCqhOxTVPSyQUlDriecym_wDHIHrE"
+        <iframe
+          src="https://www.google.com/maps?q=36.9626163,30.7724901&hl=tr&z=17&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full h-full"
+          title="Tezel Mühendislik Konumu - Atatürk Mah. 22052 Sk. No:19, Aksu/Antalya"
         />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-white p-3 shadow-md rounded-sm">
-            <span className="material-symbols-outlined text-accent text-3xl">location_on</span>
-          </div>
-        </div>
-        <div className="absolute bottom-2 left-2 bg-white/90 px-2 py-1 text-xs text-gray-500 rounded-sm">
-          Google Maps
+        <div className="absolute bottom-2 left-2 bg-white/90 px-2 py-1 text-xs text-gray-500 rounded-sm shadow-sm">
+          <a
+            href="https://www.google.com/maps/@36.9626163,30.7724901,3a,75y,326.31h,88.15t/data=!3m7!1e1!3m5!1sdkNwie-gbefmUocRyCGNaw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D1.8488952480739727%26panoid%3DdkNwie-gbefmUocRyCGNaw%26yaw%3D326.3069814429421!7i16384!8i8192!18m1!1e1?entry=ttu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-colors"
+          >
+            Google Maps'te Aç
+          </a>
         </div>
       </div>
 

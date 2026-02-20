@@ -88,14 +88,14 @@ export default function ProductCategories() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-0 border-t border-l border-gray-200">
           {categories.map((category, index) => {
             const CategoryContent = (
-              <div className="group bg-white p-8 border-r border-b border-gray-200 hover:bg-primary transition-colors duration-300">
+              <div className="group bg-white p-8 border-r border-b border-gray-200 hover:bg-primary transition-colors duration-300 h-[240px] flex flex-col">
                 <span className="material-symbols-outlined text-4xl text-accent mb-6">
                   {category.icon}
                 </span>
-                <h4 className="text-primary group-hover:text-white text-lg font-black uppercase mb-4 leading-tight">
+                <h4 className="text-primary group-hover:text-white text-lg font-black uppercase mb-4 leading-tight flex-shrink-0">
                   {category.title}
                 </h4>
-                <p className="text-gray-500 group-hover:text-gray-300 text-xs font-medium uppercase tracking-wider">
+                <p className="text-gray-500 group-hover:text-gray-300 text-xs font-medium uppercase tracking-wider flex-grow">
                   {category.description}
                 </p>
               </div>

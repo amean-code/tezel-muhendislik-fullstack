@@ -35,26 +35,11 @@ export default function ProjectsGrid({ projects, activeCategory }: ProjectsGridP
     <>
       <div className="bg-white py-12 md:py-16">
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {displayedProjects.map((project, index) => (
-              <AnimatedCard key={project.id} index={index}>
-                <ProjectCard project={project} />
-              </AnimatedCard>
-            ))}
+          <div className="flex flex-col items-center justify-center py-24">
+            <p className="text-xl font-bold text-gray-600 uppercase tracking-wide">
+              Projelerimiz yakında sizlerle
+            </p>
           </div>
-
-          {/* Load More Butonu */}
-          {filteredProjects.length > 6 && !showAll && (
-            <div className="mt-12 flex justify-center">
-              <button
-                onClick={() => setShowAll(true)}
-                className="flex items-center gap-2 rounded border border-gray-300 px-6 py-3 text-sm font-bold text-gray-700 hover:bg-gray-50 transition-colors"
-              >
-                <span>Daha Fazla Göster</span>
-                <span className="material-symbols-outlined text-sm">expand_more</span>
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </>

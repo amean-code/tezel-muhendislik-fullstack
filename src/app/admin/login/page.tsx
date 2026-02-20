@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 /**
  * Admin login sayfası
@@ -50,8 +51,14 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-md p-8">
         <div className="bg-white border border-border-color shadow-sm p-8">
           <div className="flex items-center gap-3 mb-8">
-            <div className="size-10 bg-primary text-white rounded flex items-center justify-center">
-              <span className="material-symbols-outlined text-[28px]">engineering</span>
+            <div className="size-12 flex items-center justify-center">
+              <Image
+                src="/tezel_logo_nobg.png"
+                alt="Tezel Mühendislik Logo"
+                width={48}
+                height={48}
+                className="object-contain"
+              />
             </div>
             <div>
               <h1 className="text-2xl font-bold text-primary">TEZEL ADMIN</h1>

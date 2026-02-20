@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { services } from "@/data/services";
 
@@ -78,15 +79,23 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo Bölümü */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex items-center justify-center size-10 bg-primary text-white rounded">
-              <span className="material-symbols-outlined text-[28px]">engineering</span>
+            <div className="flex items-center justify-center size-16">
+              <Image
+                src="/tezel_logo_nobg.png"
+                alt="Tezel Mühendislik Logo"
+                width={80}
+                height={80}
+                className="object-contain"
+                priority
+                unoptimized
+              />
             </div>
             <div className="flex flex-col">
               <h1 className="text-primary text-xl font-bold leading-none tracking-tight">
                 Tezel Mühendislik
               </h1>
               <span className="text-gray-500 text-xs font-medium tracking-wide mt-1 uppercase">
-                Engineering Systems
+                Güvenli Hareketin Mühendisliği
               </span>
             </div>
           </Link>

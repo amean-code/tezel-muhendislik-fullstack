@@ -42,8 +42,8 @@ export const contactInfo: ContactInfo = {
     hours: "Hafta İçi: 09:00 - 18:00",
   },
   email: {
-    primary: "info@tezelmuhendislik.com",
-    sales: "satis@tezelmuhendislik.com",
+    primary: "info@tezelmuhendislik.com.tr",
+    sales: "satis@tezelmuhendislik.com.tr",
   },
   emergency: {
     title: "Acil Durum Hattı",

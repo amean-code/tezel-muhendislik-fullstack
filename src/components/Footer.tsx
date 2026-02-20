@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { contactInfo } from "@/data/contact";
 
 /**
@@ -20,7 +21,13 @@ export default function Footer() {
           {/* Şirket Bilgisi */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-[24px] text-accent">engineering</span>
+              <Image
+                src="/tezel_logo_nobg.png"
+                alt="Tezel Mühendislik Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
               <span className="text-xl font-bold tracking-tight">Tezel Mühendislik</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">

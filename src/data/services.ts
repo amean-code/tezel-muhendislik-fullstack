@@ -43,7 +43,7 @@ export const services: Service[] = [
   },
   {
     slug: "elektrik-elektronik-taahhut",
-    icon: "smart_home",
+    icon: "electric_bolt",
     title: "Elektrik & Elektronik Taahhüt İşleri",
     description:
       "Villa elektrik, elektronik ve otomasyon projeleri. Akıllı ev sistemleri, KNX protokolü, güvenlik sistemleri ve enerji yönetimi çözümleri.",

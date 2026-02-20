@@ -29,9 +29,11 @@ export default function Hero() {
             </span>
           </div>
           <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] uppercase italic">
-            Dikey Ulaşımda
+            Hareketi Güvenle Yeniliyoruz
             <br />
-            Mühendislik Gücü
+            <span className="text-2xl sm:text-3xl lg:text-4xl font-semibold not-italic">
+              Güvenli Hareketin Mühendisliği
+            </span>
           </h1>
           <p className="text-gray-300 text-lg sm:text-xl font-medium leading-relaxed max-w-xl border-l-4 border-accent pl-6">
             Asansör, yürüyen merdiven, komponent ve modernizasyon çözümlerinde mühendislik odaklı yaklaşım.

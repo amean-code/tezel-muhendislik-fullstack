@@ -69,14 +69,14 @@ export default function Services() {
         </div>
 
         {/* 4 Sütunlu Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {services.map((service) => (
             <Link
               key={service.id}
               href={service.link}
-              className="group bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 block"
+              className="group bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 flex flex-col h-full"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden flex-shrink-0">
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-primary/0 transition-colors z-10"></div>
                 <Image
                   alt={service.imageAlt}
@@ -85,13 +85,13 @@ export default function Services() {
                   className="object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6 flex flex-col h-[220px]">
-                <div className="size-10 rounded bg-primary/5 flex items-center justify-center text-primary mb-4 group-hover:bg-accent group-hover:text-white transition-colors">
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="size-10 rounded bg-primary/5 flex items-center justify-center text-primary mb-4 group-hover:bg-accent group-hover:text-white transition-colors flex-shrink-0">
                   <span className="material-symbols-outlined">{service.icon}</span>
                 </div>
-                <h4 className="text-primary text-lg font-bold mb-2">{service.title}</h4>
-                <p className="text-gray-500 text-sm mb-auto">{service.description}</p>
-                <div className="mt-4 pt-4 border-t border-gray-100">
+                <h4 className="text-primary text-lg font-bold mb-3 line-clamp-2">{service.title}</h4>
+                <p className="text-gray-500 text-sm flex-grow line-clamp-3">{service.description}</p>
+                <div className="pt-4 border-t border-gray-100 mt-4 flex-shrink-0">
                   <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-accent transition-colors">
                     Daha fazla bilgi{" "}
                     <span className="material-symbols-outlined text-sm ml-1">chevron_right</span>

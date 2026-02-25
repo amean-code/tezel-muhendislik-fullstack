@@ -33,25 +33,25 @@ export default function ProductCategories() {
     {
       icon: "door_front",
       title: "Kabinler",
-      description: "Endüstriyel Tasarım",
+      description: "Endüstriyel Tasarım ve Özel Üretim",
       href: "/urunler?kategori=kabinler",
     },
     {
       icon: "escalator",
       title: "Yürüyen Merdivenler",
-      description: "Ağır Hizmet Tipi",
+      description: "Her Türlü Hizmet Tipinde Yürüyen Merdiven ve Bantlar",
       href: "/urunler?kategori=yuruyen-merdivenler",
     },
     {
       icon: "sensor_door",
-      title: "Kapı Sistemleri",
-      description: "Otomatik Mekanizmalar",
+      title: "Otomatik Kapı Sistemleri",
+      description: "Otomatik ve Çarpma Kapı Sistemleri",
       href: "/urunler?kategori=kapi-sistemleri",
     },
     {
       icon: "build_circle",
       title: "Yedek Parçalar",
-      description: "Sertifikalı Komponentler",
+      description: "Her Marka Orijinal ve Uyumlu Sertifikalı Komponentler",
       href: "/urunler?kategori=yedek-parcalar",
     },
     {
@@ -63,7 +63,7 @@ export default function ProductCategories() {
     {
       icon: "construction",
       title: "Bakım Ekipmanları",
-      description: "Teknik Servis Araçları",
+      description: "Sarf Malzemeler",
       href: "/urunler?kategori=bakim-ekipmanlari",
     },
     {

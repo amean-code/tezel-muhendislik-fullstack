@@ -31,12 +31,9 @@ export default function Hero() {
           <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] uppercase italic">
             Hareketi Güvenle Yeniliyoruz
             <br />
-            <span className="text-2xl sm:text-3xl lg:text-4xl font-semibold not-italic">
-              Güvenli Hareketin Mühendisliği
-            </span>
           </h1>
           <p className="text-gray-300 text-lg sm:text-xl font-medium leading-relaxed max-w-xl border-l-4 border-accent pl-6">
-            Asansör, yürüyen merdiven, komponent ve modernizasyon çözümlerinde mühendislik odaklı yaklaşım.
+            Asansör, yürüyen merdiven, yedek parça ve modernizasyon çözümlerinde mühendislik odaklı yaklaşım.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <button className="h-14 px-10 bg-accent hover:bg-[#d97b20] text-white text-sm font-black uppercase tracking-widest transition-all">

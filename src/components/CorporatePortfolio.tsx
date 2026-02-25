@@ -16,7 +16,7 @@ export default function CorporatePortfolio() {
         <div className="col-span-12 lg:col-span-7">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 font-medium leading-relaxed mb-6">
-              Tezel Mühendislik olarak, dikey taşımacılık sistemlerinde uluslararası güvenlik
+              Tezel Mühendislik olarak, yatay ve dikey taşımacılık sistemlerinde uluslararası güvenlik
               standartlarını temel alan yüksek mühendislik disiplini ile hizmet
               veriyoruz. Teknik analizden uygulamaya kadar her aşamada mekanik hassasiyeti ve
               enerji verimliliğini ön planda tutuyoruz.
@@ -25,7 +25,7 @@ export default function CorporatePortfolio() {
               Modernizasyon uzmanlığımız ile yaşlanan sistemleri güncel teknolojiyle entegre
               ederek, emniyet protokollerini en üst seviyeye çıkarıyor ve operasyonel ömrü
               maksimize ediyoruz. Sertifikalı bileşen kullanımı ve titiz mühendislik hesaplamalarıyla
-              tesislerinizin dikey mobilite altyapısını güvence altına alıyoruz.
+              tesislerinizin yatay ve dikey mobilite altyapısını güvence altına alıyoruz.
             </p>
           </div>
         </div>

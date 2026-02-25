@@ -83,8 +83,8 @@ export const serviceDetails: ServiceData[] = [
         icon: "security",
         title: "Güvenlik Artırımı",
         description:
-          "Mevcut asansörlerinizi EN 81-80 standartlarına tam uyumlu hale getirerek kaza risklerini minimize ediyoruz. Fren sistemleri, hız regülatörleri ve kapı güvenlik sensörleri en yeni teknolojilerle yenilenir.",
-        strongText: "EN 81-80",
+          "Asansörlerinizi en son standartlara tam uyumlu hale getirerek kaza risklerini minimize ediyoruz.",
+        strongText: "en son standartlara",
       },
       {
         icon: "eco",
@@ -114,20 +114,20 @@ export const serviceDetails: ServiceData[] = [
         },
         {
           icon: "settings",
-          title: "Tahrik Sistemi Dönüşümü",
-          description: "Yağlı dişli sistemlerin, bakım gerektirmeyen dişlisiz motorlarla değişimi.",
+          title: "Tahrik Sistemlerinin Yenilenmesi",
+          description: "Dişlili ve dişlisiz yeni nesil motorlar.",
           borderColor: "accent",
         },
         {
           icon: "elevator",
           title: "Kabin Yenileme",
-          description: "Anti-vandal butonlar, dekoratif paslanmaz kaplama ve zemin yenileme.",
+          description: "Anti-vandal butonlar, dekoratif paslanmaz kaplama, zemin ve tavan yenileme.",
           borderColor: "accent",
         },
         {
           icon: "sensors",
           title: "Güvenlik Güncellemesi",
-          description: "Hız regülatörü, paraşüt fren ve kuyu dibi tamponların yenilenmesi.",
+          description: "Hız regülatörü, fren blokları, kumanda panloları, iç güvenlik kapısı, fotosel, kuyu dibi tamponların yenilenmesi vb.",
           borderColor: "primary",
         },
       ],
@@ -136,7 +136,7 @@ export const serviceDetails: ServiceData[] = [
       imageAlt: "Teknik revizyon süreci ve modernizasyon uygulaması",
       note: {
         label: "Mühendislik Notu",
-        text: "Her modernizasyon projesi, binanın trafik yoğunluğuna göre özel olarak hesaplanır.",
+        text: "Her modernizasyon projesi, binanın özelliklerine ve isteklerinize göre özel olarak tasarlanır.",
       },
     },
     beforeAfter: {
@@ -148,9 +148,9 @@ export const serviceDetails: ServiceData[] = [
           labelColor: "red",
           title: "Yıpranmış ve Riskli",
           description:
-            "Gürültülü röleli pano, yüksek enerji tüketimi ve sık arıza yapan mekanik parçalar.",
+            "Gürültülü röleli pano, yüksek enerji tüketimi ve sık arıza yapan elektronik vemekanik parçalar.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuCzVkCB3rtlqnCd-MjBp4EjO3q-kpwa90BjHlOMxzBCqUb_6vjHuQseHhgzlb7be5esw2dRSazopH7QEOAnh--dpQflCF4VfiobO9NKIeRUQ6XBmmmp1tEEOVFwM7K08qPDgvJAvg6wBiNRbYAm_wwWt0EXGErwLCi0uMvUo_e64J9AtwogwnGR5LnjZgy0tzZtgZoWdI2-Dgeo34Nvjh5ERVhW_HxVQ4iDCMLfQ52DHO76sMYGi8p3Vh-JksAuJMWIxURUY-j1cU8",
+            "/hizmetler/eski-asansor-panosu.jpg",
           imageAlt: "Eski asansör sistemi ve yıpranmış parçalar",
         },
         {
@@ -158,7 +158,7 @@ export const serviceDetails: ServiceData[] = [
           labelColor: "green",
           title: "Estetik ve Güvenli",
           description:
-            "Paslanmaz çelik kabin, LED aydınlatma, dijital göstergeler ve sessiz çalışma.",
+            "Paslanmaz çelik kabin, LED aydınlatma, dijital göstergeler, enerji tasarruflu ve hız kontrollü kumando panoları, yeni nesil motorlar ile sessiz çalışma.",
           image:
             "https://lh3.googleusercontent.com/aida-public/AB6AXuDvJJ8xNPAPaZ6KMlDytTMyOv27UqwZKqHA8lge2yE9WApziochSTQ3rgSSDnCrXSTLIFCG3RTZvatOFQ2bhQAnenp_wAEwFLGvKm9FgShmMtphT3JWi-Y_fPUMIdKR8uaJ-FbqmMlmKpB1EfQItUed_RK1ROvqFJNy6R7f14h6y4BGSv1U_j3qivL8eivA2CsNjV6eQlilVihu7XLdKqyrMfmo2UpWccz0gSpKbbVSI0CrGfGs1N4No0yFdqFcDGhr7Xf-Rk8K7A4",
           imageAlt: "Modern paslanmaz çelik asansör kabini",
@@ -187,14 +187,14 @@ export const serviceDetails: ServiceData[] = [
         {
           icon: "build_circle",
           title: "4. Montaj & Test",
-          description: "Uzman ekiplerce kurulum, güvenlik testleri ve yeşil etiket alımı.",
+          description: "Uzman ekiplerce kurulum, güvenlik testleri ve uygun etiket alımı.",
         },
       ],
     },
     cta: {
       title: "Asansörünüzü Yenilemeye Hazır Mısınız?",
       description:
-        "Uzman mühendislerimizle binanızın değerini artırın, güvenliği en üst düzeye çıkarın. Hemen iletişime geçin, yerinde ücretsiz analiz yapalım.",
+        "Uzman teknik ekiplerimizle binanızın değerini artırın, güvenliği ve konforu en üst düzeye çıkarın. Hemen iletişime geçin, yerinde ücretsiz analiz yapalım.",
       primaryButton: "Modernizasyon Teklifi Al",
       secondaryButton: "Ücretsiz Keşif Randevusu Oluştur",
     },
@@ -222,7 +222,7 @@ export const serviceDetails: ServiceData[] = [
         icon: "eco",
         title: "Enerji Tasarrufu",
         description:
-          "LED aydınlatma, dur-kalk sistemleri ve verimli motor teknolojileri ile %30'a varan enerji tasarrufu sağlıyoruz.",
+          "LED aydınlatma, hız kontrol sistemleri ve verimli motor teknolojileri ile %30'a varan enerji tasarrufu sağlıyoruz.",
         strongText: "%30'a varan",
       },
       {
@@ -253,13 +253,13 @@ export const serviceDetails: ServiceData[] = [
         {
           icon: "light_mode",
           title: "LED Aydınlatma",
-          description: "Entegre LED aydınlatmalı etek fırçaları ve enerji tasarruflu aydınlatma sistemleri.",
+          description: "Entegre LED aydınlatmalı etek sacları ve enerji tasarruflu aydınlatma sistemleri.",
           borderColor: "accent",
         },
         {
           icon: "build",
           title: "Mekanik Yenileme",
-          description: "Tırabzanlar, basamaklar ve etek fırçalarının yenilenmesi.",
+          description: "El bantları, basamaklar, basamak milleri, basamak makaraları, basamak zinciri, el bandı ve motor tahrik zincirleri, etek sacı ve fırçalarının yenilenmesi, mekanik swicthler, gergi ve baskı makaraları, el bandı dönüş rulmanları vb.",
           borderColor: "primary",
         },
       ],
@@ -276,7 +276,7 @@ export const serviceDetails: ServiceData[] = [
           labelColor: "red",
           title: "Yıpranmış ve Riskli",
           description:
-            "Eski kontrol sistemleri, yüksek enerji tüketimi ve sık arıza yapan mekanik parçalar.",
+            "Eski kontrol sistemleri, yüksek enerji tüketimi ve sık arıza yapan mekanik ve elektronik parçalar.",
           image:
             "https://lh3.googleusercontent.com/aida-public/AB6AXuDZTuX8o6R-NIPOB9lgbGt3Y9VuxCSV8tGfsHsGw2D16sgP8xTExugMEZu46_nn4DnlKHsjovNMHHTMvkQAr_8osecEIHNNlOaTiCrk500Tjcs8vQ4MbNAt6JLBOCK8iKs1whCHrET1Mx0m2gwTux5jQyJbT_PMvHDgCrBswoGNnkIIRLjhnWDm0pQU4PuNeMopKa_WdS69178oGKI3V8wRjY0p48wjHEmTX9pYqqHStLyCtK490t87_JqoQtfviHmRyOhh1s4Bw5U",
           imageAlt: "Eski yürüyen merdiven sistemi",
@@ -286,7 +286,7 @@ export const serviceDetails: ServiceData[] = [
           labelColor: "green",
           title: "Modern ve Güvenli",
           description:
-            "LED aydınlatma, modern kontrol sistemleri, güvenlik sensörleri ve sessiz çalışma.",
+            "Modern kontrol sistemleri, güvenlik switch ve sensörleri, modern tahrik sistemleri ile sessiz çalışma ve  LED aydınlatma sistemleri.",
           image:
             "https://lh3.googleusercontent.com/aida-public/AB6AXuCoiSjmxljX1cKA_trm8pJus5J_l4VzgVpaEvrkE4YqxZPUNL9zvdCu9p9EPzZ7edDW73kf-93sPbjG_w77eT7ivXgk4eFrb-0XmtJg74uIuuJcv5tJzKPoABpOnfjKihkRjNmiD6ztJ7ekcDzOqLn-eSaSnhCJz6x3q9bEaXLp7l9PNATqvn67iL5DGac-8veI67sI0zs_QTI6Kp8OkVghuF4zNP9UqEbDRgoZJNur2rvolj34zIE_3Kr5xsxnPfYRIoEN7oaKzAE",
           imageAlt: "Modernize edilmiş yürüyen merdiven",
@@ -331,7 +331,7 @@ export const serviceDetails: ServiceData[] = [
     slug: "yedek-parca-satisi",
     title: "Yedek Parça Satışı: Geniş Stok Ağı ile Hızlı Çözümler",
     description:
-      "Asansör, yürüyen merdiven ve bant sistemleri için orijinal ve sertifikalı yedek parça temini. Kritik bileşenler için hızlı lojistik çözümleri.",
+      "Asansör, yürüyen merdiven ve bant sistemleri için orijinal veya uyumlu, sertifikalı yedek parça temini. Kritik bileşenler için hızlı lojistik çözümleri.",
     badge: "Yedek Parça",
     heroImage:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD1fq0Bbm6PEME_XHxEH-fQpg-FXApN7AQtOcnhXRxQYECtqfs_N2xZ6l4UTkOo-VwlY4NfVmCT0Nhumo69R8AFXvw5DwkSmf2qpriar-IGK7_niW7H3BiYxfRiC6xU_Nj57QA948vm-nWKy9MjNR7j6GhmCu4NVfLhzBFf7Fd9yqherbRLBRakk_tX89fNTBcQcTdeVxRQ480ofY_VxMS1IHstaXvcNvoKyi2R20Xr7GPi-qTHj3DG7LfBalNRI3RwgrRRjLFJjCM",
@@ -348,7 +348,7 @@ export const serviceDetails: ServiceData[] = [
       },
       {
         icon: "verified",
-        title: "Orijinal ve Sertifikalı",
+        title: "Orijinal veya Uyumlu, Sertifikalı",
         description:
           "Tüm yedek parçalarımız orijinal üretici sertifikalı ve EN standartlarına uyumludur. Güvenli ve güvenilir çözümler.",
         strongText: "EN standartları",
@@ -735,7 +735,7 @@ export const serviceDetails: ServiceData[] = [
         icon: "eco",
         title: "Yeşil Etiket Uyumluluğu",
         description:
-          "Enerji verimliliği standartlarına uygunluk denetimi ve yeşil etiket alımı için gerekli testleri gerçekleştiriyoruz.",
+          "Enerji verimliliği standartlarına uygunluk denetimi ve uygun etiket alımı için gerekli testleri gerçekleştiriyoruz.",
         strongText: "Yeşil Etiket",
       },
       {

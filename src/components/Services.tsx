@@ -27,9 +27,9 @@ export default function Services() {
     {
       id: 3,
       title: "Yedek Parça Satışı",
-      description: "Asansör, yürüyen merdiven ve bant sistemleri için orijinal ve sertifikalı yedek parça temini.",
+      description: "Asansör, yürüyen merdiven ve bant sistemleri için orijinal veya uyumlu, sertifikalı yedek parça temini.",
       icon: "inventory_2",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD1fq0Bbm6PEME_XHxEH-fQpg-FXApN7AQtOcnhXRxQYECtqfs_N2xZ6l4UTkOo-VwlY4NfVmCT0Nhumo69R8AFXvw5DwkSmf2qpriar-IGK7_niW7H3BiYxfRiC6xU_Nj57QA948vm-nWKy9MjNR7j6GhmCu4NVfLhzBFf7Fd9yqherbRLBRakk_tX89fNTBcQcTdeVxRQ480ofY_VxMS1IHstaXvcNvoKyi2R20Xr7GPi-qTHj3DG7LfBalNRI3RwgrRRjLFJjCM",
+      image: "/yedek-parca/yedek-parca-kapak-gorsel.png",
       imageAlt: "Yedek parça stok ve tedarik hizmetleri",
       link: "/hizmetler/yedek-parca-satisi",
     },
@@ -38,7 +38,7 @@ export default function Services() {
       title: "Enerji Taahhüt",
       description: "Güneş Enerji Santralleri (GES) ve Elektrikli Araç Şarj İstasyonları kurulumu. Yenilenebilir enerji çözümleri.",
       icon: "solar_power",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3UgPe3Q8ObjDieUbjRL9iL_BRWcySD0ObhZL1jPAG5WCc3IJRze2jIBmrgEfWnBbzpvd2a8iicrkMZNrP356Zdn2Lx8oIJvuWx4XwHFXacYMO-PlHbfXNfg7bk80kB4G-B3gAqx6kAXFZWEx76T2tNckfPTMVIgWt5a4Lvxlv9rRIH0a7XgeJtfzBmdRRiY8dqTGWZ06QeZt3VeCvO-xRVD8b9HGe_2JgIaedRo7V6IU6HZ-5BwT3VVwySMU_SDMX5zOq00jA-j0",
+      image: "/ev-catı-gunes-paneli.png",
       imageAlt: "Güneş enerji santrali ve şarj istasyonu projeleri",
       link: "/hizmetler/enerji-taahhut",
     },
@@ -56,7 +56,7 @@ export default function Services() {
               Mühendislik Mükemmelliği
             </h3>
             <p className="text-gray-600 text-lg">
-              Endüstriyel ve ticari ihtiyaçlar için özel olarak tasarlanmış kapsamlı dikey ulaşım çözümleri. Güvenlik, verimlilik ve tasarım sunuyoruz.
+              Endüstriyel ve ticari ihtiyaçlar için özel olarak tasarlanmış kapsamlı yatay ve dikey ulaşım çözümleri. Güvenlik, verimlilik ve estetik sunuyoruz.
             </p>
           </div>
           <Link

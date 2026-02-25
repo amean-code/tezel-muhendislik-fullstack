@@ -11,7 +11,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 export const metadata: Metadata = {
   title: "Yedek Parça Satışı - Tezel Mühendislik",
   description:
-    "Asansör, yürüyen merdiven ve bant sistemleri için orijinal ve sertifikalı yedek parça temini. Hızlı lojistik çözümleri.",
+    "Asansör, yürüyen merdiven ve bant sistemleri için orijinal veya uyumlu, sertifikalı yedek parça temini. Hızlı lojistik çözümleri.",
   keywords:
     "yedek parça, asansör yedek parça, yürüyen merdiven yedek parça, orijinal parça, Tezel Mühendislik",
   openGraph: {

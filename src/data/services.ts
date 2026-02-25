@@ -32,7 +32,7 @@ export const services: Service[] = [
     icon: "inventory_2",
     title: "Yürüyen Merdiven/Bant ve Asansör Yedek Parça Satışı",
     description:
-      "Geniş stok ağı ile orijinal ve sertifikalı yedek parça temini. Asansör, yürüyen merdiven ve bant sistemleri için kritik bileşenler ve hızlı lojistik çözümleri.",
+      "Geniş stok ağı ile orijinal veya uyumlu, sertifikalı yedek parça temini. Asansör, yürüyen merdiven ve bant sistemleri için kritik bileşenler ve hızlı lojistik çözümleri.",
   },
   {
     slug: "enerji-taahhut-isleri",

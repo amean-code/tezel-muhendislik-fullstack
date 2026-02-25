@@ -13,7 +13,7 @@ export default function Stats() {
                 Projeler
               </span>
             </div>
-            <p className="text-primary text-3xl font-black">100+</p>
+            <p className="text-primary text-3xl font-black">500+</p>
             <p className="text-gray-600 text-sm">Tamamlanan Kurulum</p>
           </div>
 
@@ -35,7 +35,7 @@ export default function Stats() {
                 Bakım
               </span>
             </div>
-            <p className="text-primary text-3xl font-black">1200+</p>
+            <p className="text-primary text-3xl font-black">1500+</p>
             <p className="text-gray-600 text-sm">Yönetilen Ünite</p>
           </div>
 
@@ -46,8 +46,8 @@ export default function Stats() {
                 Ekip
               </span>
             </div>
-            <p className="text-primary text-3xl font-black">30</p>
-            <p className="text-gray-600 text-sm">Uzman Çalışan</p>
+            <p className="text-primary text-3xl font-black">30+</p>
+            <p className="text-gray-600 text-sm">Yönetilen Ekip</p>
           </div>
         </div>
       </div>

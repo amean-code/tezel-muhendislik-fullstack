@@ -152,7 +152,7 @@ export default function ContactForm() {
           <h4 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">
             Alternatif Teklif Kanalları
           </h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-4">
             <a
               className="flex items-center justify-center gap-2 bg-primary hover:bg-[#082230] text-white py-3 px-4 rounded-sm transition-all group"
               href={contactInfo.whatsapp.url || "#"}
@@ -170,6 +170,15 @@ export default function ContactForm() {
                 alternate_email
               </span>
               <span className="font-medium">{contactInfo.email.primary}</span>
+            </a>
+            <a
+              className="flex items-center justify-center gap-2 border border-gray-300 hover:border-accent hover:text-accent text-gray-600 py-3 px-4 rounded-sm transition-all group"
+              href={`mailto:${contactInfo.email.sales}`}
+            >
+              <span className="material-symbols-outlined text-xl group-hover:text-accent transition-colors">
+                alternate_email
+              </span>
+              <span className="font-medium">{contactInfo.email.sales}</span>
             </a>
           </div>
         </div>

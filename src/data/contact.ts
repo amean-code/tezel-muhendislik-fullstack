@@ -33,12 +33,12 @@ export interface ContactInfo {
  */
 export const contactInfo: ContactInfo = {
   office: {
-    title: "Merkez Ofis",
+    title: "Merkez Ofis & Depo",
     address: "Atatürk Mah. 22052 Sk. No:19",
     addressLine2: "Aksu/Antalya",
   },
   phone: {
-    number: "0534 362 85 34",
+    number: "0532 780 54 34",
     hours: "Hafta İçi: 09:00 - 18:00",
   },
   email: {
@@ -48,12 +48,12 @@ export const contactInfo: ContactInfo = {
   emergency: {
     title: "Acil Durum Hattı",
     description: "Arıza ve acil müdahale gerektiren durumlar için 7/24 hizmetinizdeyiz.",
-    phone: "0534 362 85 34",
+    phone: "0532 780 54 34",
   },
   whatsapp: {
     text: "WhatsApp ile İletişime Geç",
     url: "#",
-    number: "905343628534", // WhatsApp için ülke kodu ile birlikte (başında + olmadan)
+    number: "905327805434", // WhatsApp için ülke kodu ile birlikte (başında + olmadan)
   },
 };
 

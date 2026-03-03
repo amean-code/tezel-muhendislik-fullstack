@@ -279,7 +279,7 @@ export const serviceDetails: ServiceData[] = [
           description:
             "Eski kontrol sistemleri, yüksek enerji tüketimi ve sık arıza yapan mekanik ve elektronik parçalar.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuDZTuX8o6R-NIPOB9lgbGt3Y9VuxCSV8tGfsHsGw2D16sgP8xTExugMEZu46_nn4DnlKHsjovNMHHTMvkQAr_8osecEIHNNlOaTiCrk500Tjcs8vQ4MbNAt6JLBOCK8iKs1whCHrET1Mx0m2gwTux5jQyJbT_PMvHDgCrBswoGNnkIIRLjhnWDm0pQU4PuNeMopKa_WdS69178oGKI3V8wRjY0p48wjHEmTX9pYqqHStLyCtK490t87_JqoQtfviHmRyOhh1s4Bw5U",
+            "/yedek-parca/yedek-parca-yuruyen-merdiven-arıza.jpg",
           imageAlt: "Eski yürüyen merdiven sistemi",
         },
         {
@@ -289,7 +289,7 @@ export const serviceDetails: ServiceData[] = [
           description:
             "Modern kontrol sistemleri, güvenlik switch ve sensörleri, modern tahrik sistemleri ile sessiz çalışma ve  LED aydınlatma sistemleri.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuCoiSjmxljX1cKA_trm8pJus5J_l4VzgVpaEvrkE4YqxZPUNL9zvdCu9p9EPzZ7edDW73kf-93sPbjG_w77eT7ivXgk4eFrb-0XmtJg74uIuuJcv5tJzKPoABpOnfjKihkRjNmiD6ztJ7ekcDzOqLn-eSaSnhCJz6x3q9bEaXLp7l9PNATqvn67iL5DGac-8veI67sI0zs_QTI6Kp8OkVghuF4zNP9UqEbDRgoZJNur2rvolj34zIE_3Kr5xsxnPfYRIoEN7oaKzAE",
+            "/hizmetler/yuruyen-merdiven-yeni.jpg",
           imageAlt: "Modernize edilmiş yürüyen merdiven",
         },
       ],
@@ -394,7 +394,7 @@ export const serviceDetails: ServiceData[] = [
         },
       ],
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD1fq0Bbm6PEME_XHxEH-fQpg-FXApN7AQtOcnhXRxQYECtqfs_N2xZ6l4UTkOo-VwlY4NfVmCT0Nhumo69R8AFXvw5DwkSmf2qpriar-IGK7_niW7H3BiYxfRiC6xU_Nj57QA948vm-nWKy9MjNR7j6GhmCu4NVfLhzBFf7Fd9yqherbRLBRakk_tX89fNTBcQcTdeVxRQ480ofY_VxMS1IHstaXvcNvoKyi2R20Xr7GPi-qTHj3DG7LfBalNRI3RwgrRRjLFJjCM",
+        "/yedek-parca/yürüyen-merdiven-yedek-parça.jpg",
       imageAlt: "Yedek parça stok ve katalog",
     },
     beforeAfter: {
@@ -408,7 +408,7 @@ export const serviceDetails: ServiceData[] = [
           description:
             "Parça bulunamaması, uzun tedarik süreleri ve sistem kesintileri.",
           image:
-            "/yedek-parca/yedek-parca-eski-parca-bekleme.jpg",
+            "/yedek-parca/yedek-parca-eski-parca-bekleme-1.jpg",
           imageAlt: "Parça bekleyen sistem",
         },
         {
@@ -522,7 +522,7 @@ export const serviceDetails: ServiceData[] = [
         },
       ],
       image:
-        "/enerji-taahhut/GES-gunes-panel-sistemleri.jpg",
+        "/enerji-taahhut/GES-gunes-panel-sistemleri-1.jpg",
       imageAlt: "GES ve şarj istasyonu kurulum projesi, güneş paneli, inverter, şebeke/batarya bağlantısı",
     },
     beforeAfter: {

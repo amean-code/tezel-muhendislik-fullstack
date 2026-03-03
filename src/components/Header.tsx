@@ -76,27 +76,16 @@ export default function Header() {
       <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo Bölümü */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex items-center justify-center size-16">
-              <Image
-                src="/tezel_logo_nobg.png"
-                alt="Tezel Mühendislik Logo"
-                width={80}
-                height={80}
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-            <div className="flex flex-col">
-              <h1 className="text-primary text-xl font-bold leading-none tracking-tight">
-                Tezel Mühendislik
-              </h1>
-              <span className="text-gray-500 text-xs font-medium tracking-wide mt-1 uppercase">
-                Hareketi Güvenle Yeniliyoruz
-              </span>
-            </div>
+          {/* Logo Bölümü - Yatay tam logo */}
+          <Link href="/" className="flex items-center h-16 sm:h-20">
+            <Image
+              src="/tezel-logo-yatay-1.png"
+              alt="Tezel Mühendislik"
+              width={280}
+              height={80}
+              className="h-full w-auto object-contain object-left"
+              priority
+            />
           </Link>
 
           {/* Masaüstü Navigasyon */}

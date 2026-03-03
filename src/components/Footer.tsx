@@ -31,7 +31,7 @@ export default function Footer() {
               <span className="text-xl font-bold tracking-tight">Tezel Mühendislik</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Asansör ve yürüyen merdiven mühendislik çözümlerinin önde gelen sağlayıcısı. 1998'den beri güvenlik, yenilik ve güvenilirliğe bağlıyız.
+              Asansör ve yürüyen merdiven/bant mühendislik çözümlerinin önde gelen sağlayıcısı. 2010 beri güvenlik, yenilik ve güvenilirliğe bağlıyız.
             </p>
             <div className="flex gap-4 pt-2">
               <a
@@ -136,37 +136,43 @@ export default function Footer() {
                   )}
                 </span>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 text-sm">
-                <span className="material-symbols-outlined text-accent text-lg">call</span>
-                <a 
-                  href={`tel:${formatPhoneForTel(contactInfo.phone.number)}`}
-                  className="hover:text-accent transition-colors"
-                >
-                  {contactInfo.phone.number}
-                </a>
+              <li className="flex items-start gap-3 text-gray-400 text-sm">
+                <span className="material-symbols-outlined text-accent text-lg mt-0.5">call</span>
+                <div className="flex flex-col">
+                  <a
+                    href={`tel:${formatPhoneForTel(contactInfo.phone.number)}`}
+                    className="hover:text-accent transition-colors"
+                  >
+                    {contactInfo.phone.number}
+                  </a>
+                  <a
+                    href={`tel:${formatPhoneForTel(contactInfo.phone2.number)}`}
+                    className="hover:text-accent transition-colors"
+                  >
+                    {contactInfo.phone2.number}
+                  </a>
+                </div>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 text-sm">
-                <span className="material-symbols-outlined text-accent text-lg">mail</span>
-                <a 
-                  href={`mailto:${contactInfo.email.primary}`}
-                  className="hover:text-accent transition-colors"
-                >
-                  {contactInfo.email.primary}
-                </a>
+              <li className="flex items-start gap-3 text-gray-400 text-sm">
+                <span className="material-symbols-outlined text-accent text-lg mt-0.5">mail</span>
+                <div className="flex flex-col">
+                  <a
+                    href={`mailto:${contactInfo.email.primary}`}
+                    className="hover:text-accent transition-colors"
+                  >
+                    {contactInfo.email.primary}
+                  </a>
+                  {contactInfo.email.sales && (
+                    <a
+                      href={`mailto:${contactInfo.email.sales}`}
+                      className="hover:text-accent transition-colors"
+                    >
+                      {contactInfo.email.sales}
+                    </a>
+                  )}
+                </div>
               </li>
             </ul>
-          </div>
-        </div>
-
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">© 2026 Tezel Mühendislik. Tüm hakları saklıdır.</p>
-          <div className="flex gap-6">
-            <Link className="text-gray-500 hover:text-white text-sm transition-colors" href="/bilgi-merkezi/yasal-yonetmelikler">
-              Gizlilik Politikası
-            </Link>
-            <Link className="text-gray-500 hover:text-white text-sm transition-colors" href="/bilgi-merkezi/yasal-yonetmelikler">
-              Kullanım Şartları
-            </Link>
           </div>
         </div>
       </div>

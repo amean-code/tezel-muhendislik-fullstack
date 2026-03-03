@@ -39,9 +39,6 @@ export default function AboutPage() {
       <AnimatedSection animationType="fadeInUp" delay={300}>
         <ExpertiseAreas />
       </AnimatedSection>
-      <AnimatedSection animationType="scaleIn" delay={400}>
-        <QualityStandards />
-      </AnimatedSection>
       <AnimatedSection animationType="fadeInUp" delay={500}>
         <AboutCTA />
       </AnimatedSection>

@@ -50,8 +50,9 @@ export default function ContactInfo() {
             <div>
               <h4 className="text-primary font-bold text-lg">Telefon</h4>
               <p className="text-gray-600 mt-1">{contactInfo.phone.number}</p>
-              {contactInfo.phone.hours && (
-                <p className="text-gray-500 text-sm mt-1">{contactInfo.phone.hours}</p>
+              <p className="text-gray-600 mt-1">{contactInfo.phone2.number}</p>
+              {contactInfo.phone2.hours && (
+                <p className="text-gray-500 text-sm mt-1">{contactInfo.phone2.hours}</p>
               )}
             </div>
           </div>

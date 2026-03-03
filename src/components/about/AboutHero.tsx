@@ -26,11 +26,11 @@ export default function AboutHero() {
           </div>
           <h1 className="font-display text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
             Tezel Mühendislik:<br />
-            <span className="text-white/80">Güvenilir Asansör ve Dikey Taşıma Sistemleri</span>
+            <span className="text-white/80">Güvenilir Asansör ve Yürüyen Merdiven Sistemleri</span>
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-300 font-light">
             Çeyrek asırlık mühendislik tecrübemizle, binaların kalbinde güvenliği ve verimliliği yeniden
-            tanımlıyoruz. Uluslararası standartlarda, teknik hassasiyetle tasarlanmış dikey taşıma çözümleri
+            tanımlıyoruz. Uluslararası standartlarda, teknik hassasiyetle tasarlanmış yatay ve dikey taşıma çözümleri
             sunuyoruz.
           </p>
         </div>

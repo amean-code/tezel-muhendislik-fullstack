@@ -8,7 +8,7 @@ interface ProductsHeaderProps {
 export default function ProductsHeader({ totalProducts = 0 }: ProductsHeaderProps) {
   return (
     <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 pb-4 border-b border-gray-200">
-      <h1 className="text-3xl font-bold text-primary">Asansör Bileşenleri</h1>
+      <h1 className="text-3xl font-bold text-primary">Asansör ve Yürüyen Merdiven/Bant Yedek Parçaları</h1>
       <div className="mt-4 sm:mt-0 flex items-center gap-3">
         <span className="text-sm text-gray-500">{totalProducts} sonuç gösteriliyor</span>
         <div className="relative">

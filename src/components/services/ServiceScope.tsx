@@ -20,6 +20,7 @@ interface ServiceScopeProps {
   items: ScopeItem[];
   image: string;
   imageAlt: string;
+  imageFit?: "cover" | "contain";
   note?: {
     label: string;
     text: string;
@@ -33,6 +34,7 @@ export default function ServiceScope({
   items,
   image,
   imageAlt,
+  imageFit = "cover",
   note,
 }: ServiceScopeProps) {
   return (
@@ -73,7 +75,9 @@ export default function ServiceScope({
               alt={imageAlt}
               src={image}
               fill
-              className="relative w-full h-full object-cover shadow-xl z-10"
+              className={`relative w-full h-full ${
+                imageFit === "contain" ? "object-contain" : "object-cover"
+              } shadow-xl z-10`}
             />
             {note && (
               <div className="absolute bottom-6 left-6 z-20 bg-white/95 backdrop-blur p-4 shadow-lg max-w-xs border-l-4 border-accent">

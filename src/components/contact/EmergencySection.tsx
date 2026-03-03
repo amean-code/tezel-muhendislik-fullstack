@@ -26,6 +26,8 @@ export default function EmergencySection() {
               >
                 <span className="material-symbols-outlined">call</span>
                 {contactInfo.emergency.phone}
+                <br />
+                {contactInfo.phone2.number}
               </a>
             </div>
             </div>
@@ -42,35 +44,6 @@ export default function EmergencySection() {
               Tezel Mühendislik olarak taleplerinize en geç 24 saat içerisinde teknik ekibimiz
               tarafından detaylı bir inceleme ile dönüş yapılmaktadır.
             </p>
-            <div className="flex items-center justify-center md:justify-start gap-6 mt-2">
-              <div className="flex -space-x-3">
-                <div className="size-10 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
-                  <img
-                    alt="Engineer"
-                    className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTIiox2f59ZAfaPdZ99H3Pf4QnqYTLRSGA_CmgNbLWevajFPMpCCiM4muOEDvgCgD6fBC2O-ODi2nm-oGThXgIBlG1e7wF2xX7cijkaZwg68UL__Ky20I5uRY-Jhcqm-78fgqaS0HFgGRf6PWUBFHi70IpipE5nxOd7sUXyXr-y-A42jObiCgYFe99pekljG3a9vCUzSgIpZYMz0-a5E7gSQNF7y5SWAMGnCAfB8Jn9duTaIqy778BIJrD96oyWgL4PMPfO4kXTwY"
-                  />
-                </div>
-                <div className="size-10 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
-                  <img
-                    alt="Engineer"
-                    className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK6cYm22GbwrW1oDCWpPionnMrGxssSRWElNOv1dhxwtQC0oBFdKKyXkd2gfRby5lWtJsZQxLEnXhQoR4EeCIMcaNr64f65gA7Q5L1IgOJEja-pHHwGnFY3u_Qp05FJuic22U8DVAgXwR_Ye5S5yuQ8kJHOuJINXGIWbk1NbAQTvogWAydL09nUXdEONtwsE3Tbwr_tsq7874Gkh6GgyDtM1xUmeKiqBqfH9zQS8GO0xnyj21OASbTcJKf9HRO1LmESny2tfjQUik"
-                  />
-                </div>
-                <div className="size-10 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
-                  <img
-                    alt="Engineer"
-                    className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyHL9PSQkkC4VlzZkV4t5Zen9rQ3rFaoqq6gB4VJ9KLCbjJ_lw-UH9G-cbgg6UJTvN49XjfZXhE9y2Qbsdgo42KzzshDfLE4okr3boEc5RRppDH5OeRYbViGBri_py-a7KecNQTGE5gSXmzjAZdFwVsy9HKiqT7WtW_3ilN4k-vEd7SHhpwbIV48S0miS-ZlmX6h3S0vgwLxxAJjpHX_Lf_Nn-5RIbe6YaEX_BvRmFyNet1t9BgIaNebrc5mRFDOpDp6Kpz5Lk8d4"
-                  />
-                </div>
-                <div className="size-10 rounded-full border-2 border-white bg-accent text-white flex items-center justify-center text-xs font-bold">
-                  +50
-                </div>
-              </div>
-              <span className="text-sm font-semibold text-gray-500">Uzman Mühendis Kadrosu</span>
-            </div>
             </div>
           </AnimatedCard>
         </div>

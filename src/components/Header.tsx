@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { services } from "@/data/services";
 
 /**
  * Header komponenti - Ana navigasyon ve logo içerir
@@ -95,7 +94,7 @@ export default function Header() {
                 Tezel Mühendislik
               </h1>
               <span className="text-gray-500 text-xs font-medium tracking-wide mt-1 uppercase">
-                Güvenli Hareketin Mühendisliği
+                Hareketi Güvenle Yeniliyoruz
               </span>
             </div>
           </Link>

@@ -29,7 +29,7 @@ export default function Hero() {
             </span>
           </div>
           <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] uppercase italic">
-            Hareketi Güvenle Yeniliyoruz
+            Güvenli Hareketin Mühendisliği
             <br />
           </h1>
           <p className="text-gray-300 text-lg sm:text-xl font-medium leading-relaxed max-w-xl border-l-4 border-accent pl-6">

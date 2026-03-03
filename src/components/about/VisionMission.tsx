@@ -17,7 +17,7 @@ export default function VisionMission() {
               Vizyon
             </h4>
             <p className="text-gray-600 leading-relaxed text-lg">
-              Dikey taşıma teknolojilerinde küresel standartları belirleyen, yenilikçi ve sürdürülebilir
+              Yatay ve dikey taşıma teknolojilerinde küresel standartları belirleyen, yenilikçi ve sürdürülebilir
               mühendislik çözümleriyle sektörde öncü, dijitalleşen bina sistemlerinde vazgeçilmez bir teknoloji
               ortağı olmak.
             </p>
@@ -31,7 +31,7 @@ export default function VisionMission() {
             </h4>
             <p className="text-gray-600 leading-relaxed text-lg">
               Can ve mal güvenliğini en üst düzeyde tutarak, ileri mühendislik disipliniyle yüksek kaliteli,
-              verimli ve güvenilir dikey taşıma sistemleri tasarlamak, kurmak ve sürdürülebilirliğini sağlamak.
+              verimli ve güvenilir yatay ve dikey taşıma sistemleri tasarlamak, kurmak ve sürdürülebilirliğini sağlamak.
             </p>
             </div>
           </AnimatedCard>

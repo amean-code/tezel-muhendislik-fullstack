@@ -17,7 +17,7 @@ export default function ExpertiseAreas() {
       icon: "elevator",
       title: "Asansör Sistemleri",
       description:
-        "Yüksek katlı binalar için yüksek hızlı yolcu ve ağır sanayi tipi yük asansörleri mühendisliği.",
+        "Yüksek katlı binalar için yüksek hızlı yolcu ve ağır sanayi tipi yük asansörleri, engelli platformları.",
     },
     {
       icon: "upgrade",
@@ -29,7 +29,7 @@ export default function ExpertiseAreas() {
       icon: "escalator",
       title: "Yürüyen Merdivenler",
       description:
-        "AVM, metro ve kamusal alanlar için ağır hizmet tipi, kesintisiz taşıma sistemleri kurulumu.",
+        "AVM, metro ve kamusal alanlar için yürüyen merdiven/bant kesintisiz taşıma sistemleri kurulumu.",
     },
     {
       icon: "build_circle",

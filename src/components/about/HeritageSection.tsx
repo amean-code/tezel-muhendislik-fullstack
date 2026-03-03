@@ -28,13 +28,11 @@ export default function HeritageSection() {
             <p>
               Tezel Mühendislik, kuruluşundan bu yana asansör ve yürüyen merdiven sistemlerinde mühendislik
               odaklı bir yaklaşımı benimsemiştir. Teknik yeterliliğimiz ve çözüm odaklı yapımızla, Türkiye
-              genelinde prestijli projelerin dikey taşıma sistemlerini üstlendik.
+              genelinde prestijli projelerin yatay ve dikey taşıma sistemlerini üstlendik.
             </p>
             <p>
-              Sadece bir mekanik sağlayıcı değil, aynı zamanda projenin planlama aşamasından işletme
-              sürecine kadar stratejik bir mühendislik partneri olarak konumlanıyoruz. Sürekli Ar-Ge
-              yatırımlarımız ve teknik kadromuzun uzmanlığı, bizi sektörün en güvenilir isimlerinden biri
-              haline getirmiştir.
+              Sadece bir elektromekanik sağlayıcı değil, aynı zamanda projenin planlama aşamasından işletme
+              sürecine kadar stratejik bir mühendislik partneri olarak konumlanıyoruz.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               {features.map((feature, index) => (
@@ -53,7 +51,7 @@ export default function HeritageSection() {
             <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-accent z-10"></div>
             <Image
               alt="Asansör komponentleri teknik görünüm"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzVkCB3rtlqnCd-MjBp4EjO3q-kpwa90BjHlOMxzBCqUb_6vjHuQseHhgzlb7be5esw2dRSazopH7QEOAnh--dpQflCF4VfiobO9NKIeRUQ6XBmmmp1tEEOVFwM7K08qPDgvJAvg6wBiNRbYAm_wwWt0EXGErwLCi0uMvUo_e64J9AtwogwnGR5LnjZgy0tzZtgZoWdI2-Dgeo34Nvjh5ERVhW_HxVQ4iDCMLfQ52DHO76sMYGi8p3Vh-JksAuJMWIxURUY-j1cU8"
+              src="/test-denetim/yuruyen-merdiven-asansor-test-bakim.jpg"
               fill
               className="object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
             />

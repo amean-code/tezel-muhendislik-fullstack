@@ -29,7 +29,7 @@ export default function ContactHero() {
             <span className="text-white/80">Teklif Talebi</span>
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-300 font-light">
-            Endüstriyel asansör ve yürüyen merdiven çözümlerimiz için teknik ekibimizle iletişime geçin
+            Asansör, yürüyen merdiven/bant ve otomasyon çözümlerimiz için teknik ekibimizle iletişime geçin
             veya projeniz için detaylı teklif alın.
           </p>
         </div>

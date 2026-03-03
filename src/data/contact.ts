@@ -26,6 +26,10 @@ export interface ContactInfo {
     url?: string;
     number: string; // WhatsApp için ülke kodu ile birlikte (başında + olmadan)
   };
+  phone2: {
+    number: string;
+    hours?: string;
+  };
 }
 
 /**
@@ -54,6 +58,10 @@ export const contactInfo: ContactInfo = {
     text: "WhatsApp ile İletişime Geç",
     url: "#",
     number: "905327805434", // WhatsApp için ülke kodu ile birlikte (başında + olmadan)
+  },
+  phone2: {
+    number: "0534 362 85 34",
+    hours: "Hafta İçi: 09:00 - 18:00",
   },
 };
 

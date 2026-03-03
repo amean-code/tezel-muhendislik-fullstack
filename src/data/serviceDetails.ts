@@ -29,6 +29,7 @@ export interface ServiceData {
     }>;
     image: string;
     imageAlt: string;
+    imageFit?: "cover" | "contain";
     note?: {
       label: string;
       text: string;
@@ -357,8 +358,8 @@ export const serviceDetails: ServiceData[] = [
         icon: "local_shipping",
         title: "Hızlı Lojistik",
         description:
-          "Acil durumlar için 24 saat içinde teslimat garantisi. Türkiye genelinde hızlı ve güvenli kargo hizmeti.",
-        strongText: "24 saat",
+          "Acil durumlar için hızlı teslimat garantisi. Türkiye genelinde hızlı ve güvenli kargo hizmeti.",
+        strongText: "hızlı teslimat",
       },
     ],
     scope: {
@@ -370,25 +371,25 @@ export const serviceDetails: ServiceData[] = [
         {
           icon: "elevator",
           title: "Asansör Parçaları",
-          description: "Motor, kablo, halat, fren, kapı mekanizması, kumanda panosu ve daha fazlası.",
+          description: "Makina-motor, flexible kablo, taşıyıcı çelik halat, fren süspansiyon blokları, otomatik kapı mekanizmaları, kumanda panoları, butonlar, elektrik panoları, hız regülatörleri, encoderlar, kuyu dipi tamponları, manyetik şalterler, switch sensör takımları ve daha fazlası.",
           borderColor: "primary",
         },
         {
           icon: "escalator",
           title: "Yürüyen Merdiven Parçaları",
-          description: "Basamak, tırabzan, etek fırçası, sürücü, kontrol panosu ve güvenlik sensörleri.",
+          description: "Basamak, çalıştırma anahtar takımları, el bantları, kumanda panosu, etek sacı fırçası, hız kontrol sürücüleri, güvenlik sensörler ve switchleri, tarak çeşitleri, en bandı dönüş rulmanları, gergi makaraları, basamak makaraları, fren bobini, makina-motor, basamak çıtaları, basamak zinciri çeşitleri, basamak milleri ve daha fazlası.",
           borderColor: "accent",
         },
         {
           icon: "straighten",
           title: "Yürüyen Bant Parçaları",
-          description: "Bant, rulo, sürücü, gerdirme sistemi ve güvenlik ekipmanları.",
+          description: "Palet, çalıştırma anahtar takımları, el bantları, kumanda panosu, etek sacı fırçası, hız kontrol sürücüleri, güvenlik sensörler ve switchleri, tarak çeşitleri, en bandı dönüş rulmanları, gergi makaraları, basamak makaraları, fren bobini, makina-motor, basamak çıtaları, basamak zinciri çeşitleri, basamak milleri ve daha fazlası.",
           borderColor: "accent",
         },
         {
           icon: "settings",
           title: "Elektrik & Elektronik",
-          description: "Kontaktör, röle, sensör, ekran, buton ve kontrol kartları.",
+          description: "Kontaktör, röle, sensör, LCD gösterge, encoderlar, buton ve kontrol kartları.",
           borderColor: "primary",
         },
       ],
@@ -407,7 +408,7 @@ export const serviceDetails: ServiceData[] = [
           description:
             "Parça bulunamaması, uzun tedarik süreleri ve sistem kesintileri.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuD1fq0Bbm6PEME_XHxEH-fQpg-FXApN7AQtOcnhXRxQYECtqfs_N2xZ6l4UTkOo-VwlY4NfVmCT0Nhumo69R8AFXvw5DwkSmf2qpriar-IGK7_niW7H3BiYxfRiC6xU_Nj57QA948vm-nWKy9MjNR7j6GhmCu4NVfLhzBFf7Fd9yqherbRLBRakk_tX89fNTBcQcTdeVxRQ480ofY_VxMS1IHstaXvcNvoKyi2R20Xr7GPi-qTHj3DG7LfBalNRI3RwgrRRjLFJjCM",
+            "/yedek-parca/yedek-parca-eski-parca-bekleme.jpg",
           imageAlt: "Parça bekleyen sistem",
         },
         {
@@ -417,7 +418,7 @@ export const serviceDetails: ServiceData[] = [
           description:
             "Geniş stok ağı, hızlı lojistik ve montaj desteği ile hızlı çözüm.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuBFRdZ3rdSniDGSa-zEmGuNPxmwsQFq_zQ_gM8L5xhuDMHDQ9rnBK4MdKVVqHbyC5gOxGEFyoKvQ8NT6O126NhVPl3wmmkYdqlhi083EAdIDrHlV92TPHBWWDV7sLcpiosvxBJ6TVSSZfcwhk7vYHvb-d1ZCb13pgkCk3Uchah3LhziWDRG-fKeq5FnABU0Qu1oeAY8u4cSGnifI8lfYHif77AmiRgTjFI_HkFOWANVhb_6PcV2lpbLRiosk-mTkKBSCDHGIahrxKQ",
+            "/yedek-parca/yedek-parca-asansor-yuruyen-merdiven.jpeg",
           imageAlt: "Hızlı yedek parça teslimatı",
         },
       ],
@@ -472,15 +473,15 @@ export const serviceDetails: ServiceData[] = [
         icon: "solar_power",
         title: "Güneş Enerji Santralleri",
         description:
-          "10 yıl devlet alım garantisi ile güvenli yatırım. Yüksek verimli panel teknolojileri ve profesyonel kurulum hizmeti.",
-        strongText: "10 yıl garanti",
+          "Yüksek verimli panel, inverter teknolojileri ve profesyonel kurulum hizmeti.",
+        strongText: "verimli panel, inverter",
       },
       {
         icon: "ev_station",
         title: "Elektrikli Araç Şarj İstasyonları",
         description:
-          "Hızlı ve normal şarj istasyonları kurulumu. Akıllı yönetim sistemleri ve uzaktan izleme imkanı.",
-        strongText: "Hızlı şarj",
+          "Elektrikli şarj istasyonları kurulumu. Akıllı yönetim sistemleri ve uzaktan izleme imkanı.",
+        strongText: "elektrikli şarj",
       },
       {
         icon: "trending_up",
@@ -498,7 +499,7 @@ export const serviceDetails: ServiceData[] = [
         {
           icon: "solar_power",
           title: "GES Kurulumu",
-          description: "Proje tasarımı, panel montajı, inverter kurulumu ve şebeke bağlantısı.",
+          description: "Proje tasarımı, panel montajı, inverter kurulumu ve şebeke/batarya bağlantısı.",
           borderColor: "primary",
         },
         {
@@ -521,8 +522,8 @@ export const serviceDetails: ServiceData[] = [
         },
       ],
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuB3UgPe3Q8ObjDieUbjRL9iL_BRWcySD0ObhZL1jPAG5WCc3IJRze2jIBmrgEfWnBbzpvd2a8iicrkMZNrP356Zdn2Lx8oIJvuWx4XwHFXacYMO-PlHbfXNfg7bk80kB4G-B3gAqx6kAXFZWEx76T2tNckfPTMVIgWt5a4Lvxlv9rRIH0a7XgeJtfzBmdRRiY8dqTGWZ06QeZt3VeCvO-xRVD8b9HGe_2JgIaedRo7V6IU6HZ-5BwT3VVwySMU_SDMX5zOq00jA-j0",
-      imageAlt: "GES ve şarj istasyonu kurulum projesi",
+        "/enerji-taahhut/GES-gunes-panel-sistemleri.jpg",
+      imageAlt: "GES ve şarj istasyonu kurulum projesi, güneş paneli, inverter, şebeke/batarya bağlantısı",
     },
     beforeAfter: {
       title: "Proje Öncesi / Sonrası",
@@ -535,8 +536,8 @@ export const serviceDetails: ServiceData[] = [
           description:
             "Yüksek elektrik faturaları, fosil yakıt bağımlılığı ve çevresel etki.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuB3UgPe3Q8ObjDieUbjRL9iL_BRWcySD0ObhZL1jPAG5WCc3IJRze2jIBmrgEfWnBbzpvd2a8iicrkMZNrP356Zdn2Lx8oIJvuWx4XwHFXacYMO-PlHbfXNfg7bk80kB4G-B3gAqx6kAXFZWEx76T2tNckfPTMVIgWt5a4Lvxlv9rRIH0a7XgeJtfzBmdRRiY8dqTGWZ06QeZt3VeCvO-xRVD8b9HGe_2JgIaedRo7V6IU6HZ-5BwT3VVwySMU_SDMX5zOq00jA-j0",
-          imageAlt: "Geleneksel enerji sistemi",
+            "/enerji-taahhut/fazla-gelen-elektrik-faturasi.jpg",
+          imageAlt: "Geleneksel enerji sistemi, yüksek elektrik faturaları, fosil yakıt bağımlılığı ve çevresel etki",
         },
         {
           label: "Yenilenebilir Enerji",
@@ -545,14 +546,14 @@ export const serviceDetails: ServiceData[] = [
           description:
             "Kendi enerjinizi üretin, düşük maliyet ve çevre dostu sistemler.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuCzVkCB3rtlqnCd-MjBp4EjO3q-kpwa90BjHlOMxzBCqUb_6vjHuQseHhgzlb7be5esw2dRSazopH7QEOAnh--dpQflCF4VfiobO9NKIeRUQ6XBmmmp1tEEOVFwM7K08qPDgvJAvg6wBiNRbYAm_wwWt0EXGErwLCi0uMvUo_e64J9AtwogwnGR5LnjZgy0tzZtgZoWdI2-Dgeo34Nvjh5ERVhW_HxVQ4iDCMLfQ52DHO76sMYGi8p3Vh-JksAuJMWIxURUY-j1cU8",
-          imageAlt: "GES kurulumu tamamlanmış proje",
+            "/enerji-taahhut/yenilenebilir-enerji-sistemleri-1.jpg",
+          imageAlt: "GES kurulumu tamamlanmış proje, güneş paneli, inverter, şebeke/batarya bağlantısı",
         },
       ],
     },
     process: {
       title: "Proje Süreci",
-      subtitle: "GES ve şarj istasyonu kurulum adımları.",
+      subtitle: "GES kurulum adımları.",
       steps: [
         {
           icon: "search",
@@ -600,7 +601,7 @@ export const serviceDetails: ServiceData[] = [
         icon: "smart_home",
         title: "Akıllı Ev Sistemleri",
         description:
-          "KNX protokolü, Home Assistant ve Zigbee teknolojileri ile tam otomasyon. Sesli komut, uzaktan erişim ve senaryo yönetimi.",
+          "KNX protokolü, Home Assistant teknolojileri ile tam otomasyon. Sesli komut, uzaktan erişim ve senaryo yönetimi.",
         strongText: "KNX protokolü",
       },
       {
@@ -621,7 +622,7 @@ export const serviceDetails: ServiceData[] = [
       badge: "Hizmet Kapsamı",
       title: "Elektrik & Elektronik Taahhüt",
       description:
-        "Villa projelerinde kapsamlı elektrik, elektronik ve otomasyon çözümleri.",
+        "Villa projelerinde kapsamlı elektrik, elektronik ve otomasyon çözümleri. Akıllı ev sistemleri, KNX protokolü, güvenlik sistemleri ve enerji yönetimi çözümleri.",
       items: [
         {
           icon: "electrical_services",
@@ -632,7 +633,7 @@ export const serviceDetails: ServiceData[] = [
         {
           icon: "smart_home",
           title: "Akıllı Ev Sistemleri",
-          description: "KNX, Zigbee, Z-Wave protokolleri ile aydınlatma, iklimlendirme ve güvenlik otomasyonu.",
+          description: "KNX protokolleri ile aydınlatma, iklimlendirme ve güvenlik otomasyonu.",
           borderColor: "accent",
         },
         {
@@ -649,8 +650,9 @@ export const serviceDetails: ServiceData[] = [
         },
       ],
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAZv9bIkBOYSIHxXsgePZ-KlzAKhNvpTsEb-dMNXutz3Q01ViXHSZFz3Ah6Ujkz55o0Udp4Pxv7ZHAsao7bw8e_Mp17z4fLGteLwAJCHFBVp9Sm61t_2PY3T7iCfmafJ5lpkEaEOqWTvJa5Ao_nksmVwoHmZmIHlZ_wjjAAqlaV3soeY5hnjmw9nYIFtewYd86PoQfuYwWoxqHgH7_Qhe4h-Buvk1yOPnXOm6yYM5x34gl6Q6vJu4AYfJVOLe2tYc5pNOtuD2BumLI",
-      imageAlt: "Villa akıllı ev sistemleri kurulumu",
+        "/enerji-elektrik/akilli-ev-sistemleri.jpg",
+      imageAlt: "Villa akıllı ev sistemleri, KNX protokolü, Home Assistant teknolojileri ile tam otomasyon. Sesli komut, uzaktan erişim ve senaryo yönetimi.",
+      imageFit: "contain",
     },
     beforeAfter: {
       title: "Geleneksel / Akıllı Sistem",
@@ -661,20 +663,20 @@ export const serviceDetails: ServiceData[] = [
           labelColor: "red",
           title: "Manuel Kontrol",
           description:
-            "Manuel aydınlatma, yüksek enerji tüketimi ve sınırlı güvenlik.",
+            "",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuAZv9bIkBOYSIHxXsgePZ-KlzAKhNvpTsEb-dMNXutz3Q01ViXHSZFz3Ah6Ujkz55o0Udp4Pxv7ZHAsao7bw8e_Mp17z4fLGteLwAJCHFBVp9Sm61t_2PY3T7iCfmafJ5lpkEaEOqWTvJa5Ao_nksmVwoHmZmIHlZ_wjjAAqlaV3soeY5hnjmw9nYIFtewYd86PoQfuYwWoxqHgH7_Qhe4h-Buvk1yOPnXOm6yYM5x34gl6Q6vJu4AYfJVOLe2tYc5pNOtuD2BumLI",
-          imageAlt: "Geleneksel elektrik sistemi",
+            "/enerji-elektrik/anahtar-ile-kapi-acilis.avif",
+          imageAlt: "Geleneksel kapi acma ve kapi kilitleme",
         },
         {
           label: "Akıllı Sistem",
           labelColor: "green",
           title: "Tam Otomasyon",
           description:
-            "Sesli komut, uzaktan erişim, enerji tasarrufu ve gelişmiş güvenlik.",
+            "Sesli komut, uzaktan erişim, enerji tasarrufu ve güvenlik alarmı.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuDIyRymCbIg6-SnFRLvKYCTnUsFR8Ngs3yYYDN4KM0tAXunjNM3Ua76A1Cd28R_1vF_xC7SveFxRYTBPr9ilR9-alTKpKAhQQ2XWaxAKE3CyhqY0V0k02Vhz3cvBs_UgQhdBf9jTRXfZzY1zd4qZmeLaWnABWXrS45WVvzUxJVxhLx7GWr_QC2f4fo_kOdX4UqZZGfXREjtSpFmCJvuykcTp1n2mMJ1HvqiOpUwiBng6DyWIGxgpo8lylpdO58khY0DOgEIU3TLG_E",
-          imageAlt: "Akıllı ev sistemi kurulumu",
+            "/enerji-elektrik/akilli-ev-sistemi.jpg",
+          imageAlt: "Akıllı ev sistemi, sesli komut, uzaktan erişim, enerji tasarrufu ve güvenlik alarmı",
         },
       ],
     },
@@ -716,13 +718,13 @@ export const serviceDetails: ServiceData[] = [
     slug: "test-denetim",
     title: "Test & Denetim: Güvenlik ve Uyumluluk Kontrolleri",
     description:
-      "Periyodik fenni muayene hazırlığı, yeşil etiket uyumluluk denetimleri ve yük testleri ile sistemlerinizin güvenliğini ve standartlara uyumunu garanti ediyoruz.",
+      "Periyodik fenni muayene hazırlığı, yeşil/mavi etiket uyumluluk denetimleri ve yük testleri ile sistemlerinizin güvenliğini ve standartlara uyumunu denetliyoruz.",
     badge: "Denetim & Raporlama",
     heroImage:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCzVkCB3rtlqnCd-MjBp4EjO3q-kpwa90BjHlOMxzBCqUb_6vjHuQseHhgzlb7be5esw2dRSazopH7QEOAnh--dpQflCF4VfiobO9NKIeRUQ6XBmmmp1tEEOVFwM7K08qPDgvJAvg6wBiNRbYAm_wwWt0EXGErwLCi0uMvUo_e64J9AtwogwnGR5LnjZgy0tzZtgZoWdI2-Dgeo34Nvjh5ERVhW_HxVQ4iDCMLfQ52DHO76sMYGi8p3Vh-JksAuJMWIxURUY-j1cU8",
     heroImageAlt: "Test ve denetim hizmetleri - güvenlik kontrolleri",
     whyTitle: "Neden Test & Denetim?",
-    whySubtitle: "Düzenli test ve denetim, güvenlik standartlarına uyum ve yasal yükümlülüklerin yerine getirilmesi için kritiktir.",
+    whySubtitle: "Düzenli test ve denetim, güvenlik standartlarına uyum ve yasal yükümlülüklerin yerine getirilmesi için kritik bir unsurdur.",
     whyCards: [
       {
         icon: "verified",
@@ -733,10 +735,10 @@ export const serviceDetails: ServiceData[] = [
       },
       {
         icon: "eco",
-        title: "Yeşil Etiket Uyumluluğu",
+        title: "Yeşil/Mavi Etiket Uyumluluğu",
         description:
           "Enerji verimliliği standartlarına uygunluk denetimi ve uygun etiket alımı için gerekli testleri gerçekleştiriyoruz.",
-        strongText: "Yeşil Etiket",
+        strongText: "Yeşil/Mavi Etiket",
       },
       {
         icon: "science",
@@ -754,19 +756,19 @@ export const serviceDetails: ServiceData[] = [
         {
           icon: "weight",
           title: "Yük Testleri",
-          description: "Nominal yükün %125'i ile güvenlik testleri ve fren sistemlerinin kontrolü.",
+          description: "",
           borderColor: "primary",
         },
         {
           icon: "speed",
           title: "Hız ve Performans Testleri",
-          description: "Hız regülatörü, ivme ve duruş hassasiyeti ölçümleri.",
+          description: "",
           borderColor: "accent",
         },
         {
           icon: "sensors",
           title: "Güvenlik Sistemleri Kontrolü",
-          description: "Kapı güvenlik sensörleri, paraşüt fren ve acil durdurma sistemlerinin testi.",
+          description: "",
           borderColor: "accent",
         },
         {
@@ -777,8 +779,9 @@ export const serviceDetails: ServiceData[] = [
         },
       ],
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDvJJ8xNPAPaZ6KMlDytTMyOv27UqwZKqHA8lge2yE9WApziochSTQ3rgSSDnCrXSTLIFCG3RTZvatOFQ2bhQAnenp_wAEwFLGvKm9FgShmMtphT3JWi-Y_fPUMIdKR8uaJ-FbqmMlmKpB1EfQItUed_RK1ROvqFJNy6R7f14h6y4BGSv1U_j3qivL8eivA2CsNjV6eQlilVihu7XLdKqyrMfmo2UpWccz0gSpKbbVSI0CrGfGs1N4No0yFdqFcDGhr7Xf-Rk8K7A4",
+        "/test-denetim/yuruyen-merdiven-asansor-test-bakim.jpg",
       imageAlt: "Test ve denetim süreci - mühendislik kontrolleri",
+      imageFit: "contain",
       note: {
         label: "Denetim Notu",
         text: "Tüm test sonuçları detaylı raporlarla belgelendirilir ve yasal gereklilikler karşılanır.",
@@ -795,7 +798,7 @@ export const serviceDetails: ServiceData[] = [
           description:
             "Güvenlik durumu belirsiz, yasal yükümlülükler karşılanmamış ve olası cezai yaptırımlar.",
           image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuCzVkCB3rtlqnCd-MjBp4EjO3q-kpwa90BjHlOMxzBCqUb_6vjHuQseHhgzlb7be5esw2dRSazopH7QEOAnh--dpQflCF4VfiobO9NKIeRUQ6XBmmmp1tEEOVFwM7K08qPDgvJAvg6wBiNRbYAm_wwWt0EXGErwLCi0uMvUo_e64J9AtwogwnGR5LnjZgy0tzZtgZoWdI2-Dgeo34Nvjh5ERVhW_HxVQ4iDCMLfQ52DHO76sMYGi8p3Vh-JksAuJMWIxURUY-j1cU8",
+            "/test-denetim/test-denetim-eski-asansor-1.jpg",
           imageAlt: "Denetimsiz sistem riskleri",
         },
         {

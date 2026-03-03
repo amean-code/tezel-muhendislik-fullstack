@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   description: "Modern altyapı için güvenilir dikey ulaşım çözümleri. Dünya standartlarında asansör ve yürüyen merdiven sistemleri tasarlıyor, kuruyor ve bakımını yapıyoruz.",
   keywords: "asansör, yürüyen merdiven, asansör bakımı, asansör modernizasyonu, Tezel Mühendislik, dikey ulaşım sistemleri",
   authors: [{ name: "Tezel Mühendislik" }],
+  verification: {
+    google: "fv3GgDPQmrX0luMslgLkfOhs29y7x-NySmUjt1mhHfs",
+  },
   icons: {
     icon: "/tezel_logo_nobg.png",
     shortcut: "/tezel_logo_nobg.png",

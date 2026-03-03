@@ -50,6 +50,7 @@ export default function ProductsPage() {
               </button>
             </div>
           </AnimatedSection>
+          <br />
           {/* Not: Görseller tıklandığında yalnızca büyütmek için gelecekte bir lightbox/modal eklenebilir. Şu an yönlendirme yok. */}
           <AnimatedSection animationType="fadeInUp" delay={500}>
           <ServiceDetailCTA

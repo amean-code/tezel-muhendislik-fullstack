@@ -99,15 +99,6 @@ export default function ContactInfo() {
           </a>
         </div>
       </div>
-
-      {/* WhatsApp Butonu */}
-      <a
-        className="flex items-center justify-center gap-3 w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-4 px-6 rounded-sm font-bold transition-all shadow-md hover:shadow-lg"
-        href={contactInfo.whatsapp.url || "#"}
-      >
-        <span className="material-symbols-outlined text-2xl">chat</span>
-        <span className="text-lg">{contactInfo.whatsapp.text}</span>
-      </a>
     </div>
   );
 }

@@ -1,5 +1,8 @@
+import Link from "next/link";
+
 /**
- * ServicesCTA komponenti - Hizmetler sayfası CTA bölümü
+ * ServicesCTA komponenti - Hizmetler sayfası CTA bölümü.
+ * "Teklif Talep Et" ve "İletişime Geç" butonları iletişim sayfasına yönlendirir.
  */
 export default function ServicesCTA() {
   return (
@@ -13,12 +16,18 @@ export default function ServicesCTA() {
           sistemleri için ücretsiz keşif talep edin.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="w-full sm:w-auto min-w-[200px] h-14 px-8 bg-accent hover:bg-[#d97b20] text-white text-lg font-bold transition-colors shadow-md">
+          <Link
+            href="/iletisim"
+            className="w-full sm:w-auto min-w-[200px] h-14 px-8 bg-accent hover:bg-[#d97b20] text-white text-lg font-bold transition-colors shadow-md flex items-center justify-center"
+          >
             Teklif Talep Et
-          </button>
-          <button className="w-full sm:w-auto min-w-[200px] h-14 px-8 bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white text-lg font-bold transition-colors">
+          </Link>
+          <Link
+            href="/iletisim"
+            className="w-full sm:w-auto min-w-[200px] h-14 px-8 bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white text-lg font-bold transition-colors flex items-center justify-center"
+          >
             İletişime Geç
-          </button>
+          </Link>
         </div>
       </div>
     </section>

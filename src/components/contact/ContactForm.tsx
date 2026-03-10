@@ -4,6 +4,59 @@ import { serviceTypes, contactInfo } from "@/data/contact";
 import { useState } from "react";
 
 /**
+ * Gmail compose URL'si oluşturur (tarayıcıda Gmail yeni mail penceresi açmak için).
+ */
+function buildGmailComposeUrl(params: {
+  to: string;
+  subject: string;
+  body: string;
+}) {
+  const searchParams = new URLSearchParams({
+    view: "cm",
+    fs: "1",
+    to: params.to,
+    su: params.subject,
+    body: params.body,
+  });
+
+  return `https://mail.google.com/mail/?${searchParams.toString()}`;
+}
+
+/**
+ * Form verilerinden WhatsApp mesaj metnini üretir.
+ */
+function buildWhatsAppMessage(formData: {
+  fullname: string;
+  email: string;
+  phone: string;
+  serviceType: string;
+  message: string;
+}) {
+  const lines = [
+    "Merhaba, web siteniz üzerinden hızlı teklif talebinde bulunmak istiyorum.",
+    "",
+    `Ad Soyad: ${formData.fullname}`,
+    `E-posta: ${formData.email}`,
+    `Telefon: ${formData.phone}`,
+    `Hizmet/Ürün Türü: ${formData.serviceType}`,
+    "",
+    "Mesajım:",
+    formData.message,
+  ];
+
+  return lines.join("\n");
+}
+
+/**
+ * WhatsApp hızlı teklif linkini oluşturur.
+ */
+function buildWhatsAppUrl(message: string) {
+  const phone = contactInfo.whatsapp.number;
+  const encoded = encodeURIComponent(message);
+  return `https://wa.me/${phone}?text=${encoded}`;
+}
+
+/**
  * ContactForm komponenti - Teklif talep formu
  */
 export default function ContactForm() {
@@ -15,12 +68,50 @@ export default function ContactForm() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form gönderimi burada yapılacak
-    console.log("Form gönderildi:", formData);
+  /**
+   * Form verilerinden e-posta konu ve gövdesini hazırlar.
+   */
+  const buildMailContent = () => {
+    const subject = `Teklif Talebi - ${formData.fullname || "İsimsiz"} - ${
+      formData.serviceType || "Hizmet seçilmedi"
+    }`;
+
+    const lines = [
+      "Yeni bir teklif talebi alındı:",
+      "",
+      `Ad Soyad: ${formData.fullname}`,
+      `E-posta: ${formData.email}`,
+      `Telefon: ${formData.phone}`,
+      `Hizmet/Ürün Türü: ${formData.serviceType}`,
+      "",
+      "Mesaj:",
+      formData.message,
+    ];
+
+    const body = lines.join("\n");
+
+    return { subject, body };
   };
 
+  /**
+   * Form gönderiminde Gmail üzerinden yeni e-posta penceresi açar.
+   */
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const { subject, body } = buildMailContent();
+    const to = contactInfo.email.primary;
+
+    // Kullanıcı Gmail kullanıyorsa yeni sekmede compose ekranını açıyoruz.
+    const gmailUrl = buildGmailComposeUrl({ to, subject, body });
+    if (typeof window !== "undefined") {
+      window.open(gmailUrl, "_blank");
+    }
+  };
+
+  /**
+   * Form alanlarını state ile günceller.
+   */
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
@@ -153,15 +244,22 @@ export default function ContactForm() {
             Alternatif Teklif Kanalları
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-1 gap-4">
-            <a
+            <button
               className="flex items-center justify-center gap-2 bg-primary hover:bg-[#082230] text-white py-3 px-4 rounded-sm transition-all group"
-              href={contactInfo.whatsapp.url || "#"}
+              type="button"
+              onClick={() => {
+                const message = buildWhatsAppMessage(formData);
+                const url = buildWhatsAppUrl(message);
+                if (typeof window !== "undefined") {
+                  window.open(url, "_blank");
+                }
+              }}
             >
               <span className="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">
                 chat
               </span>
               <span className="font-medium">WhatsApp ile Hızlı Teklif</span>
-            </a>
+            </button>
             <a
               className="flex items-center justify-center gap-2 border border-gray-300 hover:border-accent hover:text-accent text-gray-600 py-3 px-4 rounded-sm transition-all group"
               href={`mailto:${contactInfo.email.primary}`}

@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { services } from "@/data/services";
+import { serviceDetails } from "@/data/serviceDetails";
 
 /**
- * Slug'dan sayfa URL'sine dönüştürme fonksiyonu
+ * Slug'dan hizmet detay sayfası URL'sine dönüştürür (route path ile slug birebir eşleşmeyebilir).
  */
 function getServiceUrl(slug: string): string {
   const urlMap: Record<string, string> = {
@@ -13,11 +13,11 @@ function getServiceUrl(slug: string): string {
     "elektrik-elektronik-taahhut": "/hizmetler/elektrik-elektronik-taahhut",
     "test-denetim": "/hizmetler/test-denetim",
   };
-  return urlMap[slug] || "/hizmetler";
+  return urlMap[slug] || `/hizmetler/${slug}`;
 }
 
 /**
- * ServicesGrid komponenti - Hizmet kartları grid'i
+ * ServicesGrid komponenti - Hizmet kartları grid'i (yalnızca başlık ve açıklama ile, görselsiz).
  */
 export default function ServicesGrid() {
   return (
@@ -33,21 +33,19 @@ export default function ServicesGrid() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
+          {serviceDetails.map((service) => (
             <Link
               key={service.slug}
               href={getServiceUrl(service.slug)}
-              className="bg-white border border-gray-200 p-8 service-card-hover transition-all duration-300 group block"
+              className="bg-white border border-gray-200 overflow-hidden service-card-hover transition-all duration-300 group block"
             >
-              <div className="mb-6 inline-flex items-center justify-center p-3 bg-gray-50">
-                <span className="material-symbols-outlined text-primary text-[32px]">
-                  {service.icon}
-                </span>
+              <div className="h-1 w-full bg-primary/80 group-hover:bg-accent transition-colors duration-300" />
+              <div className="p-8">
+                <h3 className="text-xl font-display font-bold text-primary mb-3 group-hover:text-accent transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
               </div>
-              <h3 className="text-xl font-display font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
             </Link>
           ))}
         </div>

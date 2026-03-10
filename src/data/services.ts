@@ -1,7 +1,8 @@
-/**
- * Hizmet verileri için TypeScript tipleri ve mock veriler
- */
+import { serviceDetails } from "@/data/serviceDetails";
 
+/**
+ * Hizmet verileri için TypeScript tipleri (liste görünümü).
+ */
 export interface Service {
   slug: string;
   icon: string;
@@ -9,53 +10,25 @@ export interface Service {
   description: string;
 }
 
+/** Hizmet slug'ına göre ikon eşlemesi. */
+const slugToIcon: Record<string, string> = {
+  "asansor-modernizasyonu": "upgrade",
+  "yuruyen-merdiven-bant-modernizasyonu": "upgrade",
+  "yedek-parca-satisi": "inventory_2",
+  "enerji-taahhut-isleri": "solar_power",
+  "elektrik-elektronik-taahhut": "electric_bolt",
+  "test-denetim": "fact_check",
+};
+
 /**
- * Tüm hizmetlerin listesi
+ * Tüm hizmetlerin listesi (detay sayfalarındaki başlık ve açıklama ile senkron).
  */
-export const services: Service[] = [
-  {
-    slug: "asansor-modernizasyonu",
-    icon: "upgrade",
-    title: "Asansör Modernizasyonu",
-    description:
-      "Mevcut sistemlerin verimliliğini, güvenliğini ve konforunu artırmak için kapsamlı modernizasyon paketleri sunuyoruz. Enerji tasarrufu odaklı revizyonlar.",
-  },
-  {
-    slug: "yuruyen-merdiven-bant-modernizasyonu",
-    icon: "upgrade",
-    title: "Yürüyen Merdiven/Bant Modernizasyonu",
-    description:
-      "Mevcut yürüyen merdiven ve bant sistemlerinizi modern teknolojilerle yenileyin. Güvenlik, enerji verimliliği ve performans artışı sağlıyoruz.",
-  },
-  {
-    slug: "yedek-parca-satisi",
-    icon: "inventory_2",
-    title: "Yürüyen Merdiven/Bant ve Asansör Yedek Parça Satışı",
-    description:
-      "Geniş stok ağı ile orijinal veya uyumlu, sertifikalı yedek parça temini. Asansör, yürüyen merdiven ve bant sistemleri için kritik bileşenler ve hızlı lojistik çözümleri.",
-  },
-  {
-    slug: "enerji-taahhut-isleri",
-    icon: "solar_power",
-    title: "Enerji Taahhüt",
-    description:
-      "Güneş Enerji Santralleri (GES) ve Elektrikli Araç Şarj İstasyonları kurulumu. Yenilenebilir enerji çözümleri ve sürdürülebilir altyapı projeleri.",
-  },
-  {
-    slug: "elektrik-elektronik-taahhut",
-    icon: "electric_bolt",
-    title: "Elektrik & Elektronik Taahhüt İşleri",
-    description:
-      "Villa elektrik, elektronik ve otomasyon projeleri. Akıllı ev sistemleri, KNX protokolü, güvenlik sistemleri ve enerji yönetimi çözümleri.",
-  },
-  {
-    slug: "test-denetim",
-    icon: "fact_check",
-    title: "Test & Denetim",
-    description:
-      "Periyodik fenni muayene hazırlığı, yeşil etiket uyumluluk denetimleri ve yük testleri. Bağımsız mühendislik raporlaması.",
-  },
-];
+export const services: Service[] = serviceDetails.map((s) => ({
+  slug: s.slug,
+  icon: slugToIcon[s.slug] ?? "handyman",
+  title: s.title,
+  description: s.description,
+}));
 
 /**
  * Slug'a göre hizmet bulma fonksiyonu

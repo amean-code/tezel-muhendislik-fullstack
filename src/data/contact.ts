@@ -2,6 +2,7 @@
  * İletişim bilgileri için TypeScript tipleri ve veriler
  */
 
+import { services } from "./services";
 export interface ContactInfo {
   office: {
     title: string;
@@ -67,11 +68,9 @@ export const contactInfo: ContactInfo = {
 
 /**
  * Hizmet/Ürün türleri (form için)
+ * Tüm hizmetler listesinden türetilir, böylece formdaki seçenekler hiçbir zaman eksik kalmaz.
  */
-export const serviceTypes = [
-  { value: "elevator-systems", label: "Asansör Sistemleri" },
-  { value: "escalator-systems", label: "Yürüyen Merdiven" },
-  { value: "modernization", label: "Modernizasyon" },
-  { value: "maintenance", label: "Bakım ve Servis" },
-  { value: "components", label: "Yedek Parça" },
-];
+export const serviceTypes = services.map((service) => ({
+  value: service.slug,
+  label: service.title,
+}));
